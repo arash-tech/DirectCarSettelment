@@ -1,7 +1,7 @@
 <Designer>
   <Project>
     <Name>DirectCarClaimSettling</Name>
-    <Path>C:\Users\ArashAminzadeh\Documents\FlexRule\Projects\DirectCarSettlement</Path>
+    <Path>C:\Users\RajithaAbeygunawardh\Documents\FlexRule\Projects\CarSettlementInsuranceRDR</Path>
     <Description></Description>
   </Project>
   <References />
@@ -44,7 +44,7 @@
   <Extensions></Extensions>
   <Functions />
   <Debugger>
-    <Runtime path="C:\Users\ArashAminzadeh\Documents\.flexrule\9.1.123" />
+    <Runtime path="C:\Users\RajithaAbeygunawardh\Documents\.flexrule\9.1.131" />
     <License path="" />
   </Debugger>
   <TreeDocument>
