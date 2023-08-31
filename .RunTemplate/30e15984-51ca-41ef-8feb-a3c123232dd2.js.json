@@ -1,0 +1,10 @@
+{
+    "Counterparty Object":
+    {
+        "Vehicle Type":"Car",
+        "Vehicle Insurance Obligation":true,
+        "Vehicle Country of Registration":"Belgium",
+        "Vehicle Insurance Company":"AG Insurance",
+        "Vehicle Insurance Status":"Insured"
+    }
+}

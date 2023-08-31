@@ -1,0 +1,108 @@
+<DecisionTable name="Circumstances Enrichment" processAll="False">
+  <Declaration>
+    <Define name="Circumstance" type="Circumstance" assembly="Glossaries\Concept.xml" direction="Out" />
+    <Define name="circumstance" type="string" direction="In" />
+  </Declaration>
+  <Columns>
+    <Condition name="Input Circumstance" discriminator="True" expression="circumstance" />
+    <Action name="Circumstance" expression="Circumstance.Input Circumstance" />
+    <Action name="Gravity" expression="Circumstance.Gravity&amp;#13;&amp;#10;/*Circumstance Gravities*/" />
+  </Columns>
+  <Data>
+    <Row>
+      <Value>"1 - parked/stopped"</Value>
+      <Value>:circumstance</Value>
+      <Value>"Protecting"</Value>
+    </Row>
+    <Row>
+      <Value>"2 - leaving a parking place"</Value>
+      <Value>:circumstance</Value>
+      <Value>"Inculpatory"</Value>
+    </Row>
+    <Row>
+      <Value>"2bis - opening the door"</Value>
+      <Value>:circumstance</Value>
+      <Value>"Inculpatory"</Value>
+    </Row>
+    <Row>
+      <Value>"3 - entering a parking place"</Value>
+      <Value>:circumstance</Value>
+      <Value>"Neutral"</Value>
+    </Row>
+    <Row>
+      <Value>"4 - emerging from a car park, from private ground, from a track"</Value>
+      <Value>:circumstance</Value>
+      <Value>"Inculpatory"</Value>
+    </Row>
+    <Row>
+      <Value>"5 - entering a car park, private ground, a track"</Value>
+      <Value>:circumstance</Value>
+      <Value>"Neutral"</Value>
+    </Row>
+    <Row>
+      <Value>"6 - entering a roundabout"</Value>
+      <Value>:circumstance</Value>
+      <Value>"Neutral"</Value>
+    </Row>
+    <Row>
+      <Value>"7 - circulating a roundabout"</Value>
+      <Value>:circumstance</Value>
+      <Value>"Protecting"</Value>
+    </Row>
+    <Row>
+      <Value>"8 - striking the rear of the other vehicle while going  in the same direction and in the same lane"</Value>
+      <Value>:circumstance</Value>
+      <Value>"Neutral"</Value>
+    </Row>
+    <Row>
+      <Value>"9 - going in the same direction but in a different lane"</Value>
+      <Value>:circumstance</Value>
+      <Value>"Neutral"</Value>
+    </Row>
+    <Row>
+      <Value>"10 - changing lanes"</Value>
+      <Value>:circumstance</Value>
+      <Value>"Neutral"</Value>
+    </Row>
+    <Row>
+      <Value>"11 - overtaking"</Value>
+      <Value>:circumstance</Value>
+      <Value>"Neutral"</Value>
+    </Row>
+    <Row>
+      <Value>"12 - turning to the right"</Value>
+      <Value>:circumstance</Value>
+      <Value>"Neutral"</Value>
+    </Row>
+    <Row>
+      <Value>"13 - turning to the left"</Value>
+      <Value>:circumstance</Value>
+      <Value>"Neutral"</Value>
+    </Row>
+    <Row>
+      <Value>"14 - reversing"</Value>
+      <Value>:circumstance</Value>
+      <Value>"Inculpatory"</Value>
+    </Row>
+    <Row>
+      <Value>"15 - encroaching on a lane reserved for circulation in the opposite direction"</Value>
+      <Value>:circumstance</Value>
+      <Value>"Neutral"</Value>
+    </Row>
+    <Row>
+      <Value>"16 - coming from the right at road junctions"</Value>
+      <Value>:circumstance</Value>
+      <Value>"Neutral"</Value>
+    </Row>
+    <Row>
+      <Value>"17 - had not observed a right of way sign"</Value>
+      <Value>:circumstance</Value>
+      <Value>"Neutral"</Value>
+    </Row>
+    <Row>
+      <Value>"17bis - had not observed a red light"</Value>
+      <Value>:circumstance</Value>
+      <Value>"Extremely Inculpatory"</Value>
+    </Row>
+  </Data>
+</DecisionTable>

@@ -1,0 +1,561 @@
+<DecisionTable name="Car Accident Liability" processAll="True">
+  <Declaration>
+    <Define name="Circumstance Gravity Liability" direction="In" />
+    <Define name="Insured Customer Number of Circumstances" direction="In" />
+    <Define name="Counterparty Accident Circumstance" direction="In" />
+    <Define name="Insured Customer Accident Circumstance" direction="In" />
+    <Define name="Counterparty Number of Circumstances" direction="In" />
+    <Define name="Car Accident Liability" direction="Out" />
+  </Declaration>
+  <Columns>
+    <Condition name="Circumstance Gravity Liability" expression="Circumstance Gravity Liability" />
+    <Condition name="Insured Customer Number Of Circumstances" expression="Insured Customer Number of Circumstances" />
+    <Condition name="Counterparty Number Of Circumstances" expression="Counterparty Number of Circumstances" />
+    <Condition name="Insured Customer Accident Circumstance" expression="Insured Customer Accident Circumstance" />
+    <Condition name="Counterparty Accident Circumstance" expression="Counterparty Accident Circumstance" />
+    <Action name="Car Accident Liability" expression="Car Accident Liability" />
+  </Columns>
+  <Data>
+    <Row>
+      <Value>: not("Liability Cannot Be Determined")</Value>
+      <Value></Value>
+      <Value></Value>
+      <Value></Value>
+      <Value></Value>
+      <Value>: Circumstance Gravity Liability</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>&gt; 1</Value>
+      <Value></Value>
+      <Value></Value>
+      <Value></Value>
+      <Value>: Circumstance Gravity Liability</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value></Value>
+      <Value>&gt; 1</Value>
+      <Value></Value>
+      <Value></Value>
+      <Value>: Circumstance Gravity Liability</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>0</Value>
+      <Value>0</Value>
+      <Value></Value>
+      <Value></Value>
+      <Value>: Circumstance Gravity Liability</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>0</Value>
+      <Value>1</Value>
+      <Value></Value>
+      <Value>"16 - coming from the right at road junctions"</Value>
+      <Value>"Insured Customer Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>0</Value>
+      <Value>1</Value>
+      <Value></Value>
+      <Value>: not("16 - coming from the right at road junctions")</Value>
+      <Value>"Counterparty Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>0</Value>
+      <Value>"16 - coming from the right at road junctions"</Value>
+      <Value></Value>
+      <Value>"Counterparty Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>0</Value>
+      <Value>: not("16 - coming from the right at road junctions")</Value>
+      <Value></Value>
+      <Value>"Insured Customer Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"1 - parked/stopped", "6 - entering a roundabout", "7 -
+              circulating a roundabout", "8 - striking the rear of the other
+              vehicle while going in the same direction and in the same lane",
+              "16 - coming from the right at road junctions"</Value>
+      <Value>: Insured Customer Accident Circumstances.Circumstance</Value>
+      <Value>"Liability Cannot Be Determined"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>: not("1 - parked/stopped", "6 - entering a roundabout", "7 -
+              circulating a roundabout", "8 - striking the rear of the other
+              vehicle while going in the same direction and in the same lane",
+              "16 - coming from the right at road junctions")</Value>
+      <Value>: Insured Customer Accident Circumstances.Circumstance</Value>
+      <Value>"Shared Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"3 - entering a parking place"</Value>
+      <Value>"9 - going in the same direction but in a different
+              lane"</Value>
+      <Value>"Insured Customer Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"3 - entering a parking place"</Value>
+      <Value>"16 - coming from the right at road junctions"</Value>
+      <Value>"Insured Customer Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"3 - entering a parking place"</Value>
+      <Value>"5 - entering a car park, private ground, a track"</Value>
+      <Value>"Shared Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"3 - entering a parking place"</Value>
+      <Value>: not("3 - entering a parking place", "3 - entering a parking
+              place", "16 - coming from the right at road junctions", "5 -
+              entering a car park, private ground, a track")</Value>
+      <Value>"Counterparty Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"5 - entering a car park, private ground, a track"</Value>
+      <Value>"3 - entering a parking place"</Value>
+      <Value>"Shared Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"5 - entering a car park, private ground, a track"</Value>
+      <Value>"7 - circulating a roundabout"</Value>
+      <Value>"Insured Customer Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"5 - entering a car park, private ground, a track"</Value>
+      <Value>"9 - going in the same direction but in a different
+              lane"</Value>
+      <Value>"Insured Customer Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"5 - entering a car park, private ground, a track"</Value>
+      <Value>"16 - coming from the right at road junctions"</Value>
+      <Value>"Insured Customer Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"5 - entering a car park, private ground, a track"</Value>
+      <Value>: not("3 - entering a parking place", "5 - entering a car park,
+              private ground, a track", "7 - circulating a roundabout", "9 -
+              going in the same direction but in a different lane", "16 - coming
+              from the right at road junctions")</Value>
+      <Value>"Counterparty Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"6 - entering a roundabout"</Value>
+      <Value>"8 - striking the rear of the other vehicle while going in the
+              same direction and in the same lane"</Value>
+      <Value>"Counterparty Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"6 - entering a roundabout"</Value>
+      <Value>"9 - going in the same direction but in a different
+              lane"</Value>
+      <Value>"Counterparty Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"6 - entering a roundabout"</Value>
+      <Value>"16 - coming from the right at road junctions"</Value>
+      <Value>"Counterparty Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"6 - entering a roundabout"</Value>
+      <Value>"17 - had not observed a right of way sign"</Value>
+      <Value>"Shared Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"6 - entering a roundabout"</Value>
+      <Value>: not("6 - entering a roundabout", "8 - striking the rear of the
+              other vehicle while going in the same direction and in the same
+              lane", "9 - going in the same direction but in a different lane",
+              "16 - coming from the right at road junctions", "17 - had not
+              observed a right of way sign")</Value>
+      <Value>"Insured Customer Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"8 - striking the rear of the other vehicle while going in the
+              same direction and in the same lane"</Value>
+      <Value>"10 - changing lanes"</Value>
+      <Value>"Counterparty Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"8 - striking the rear of the other vehicle while going in the
+              same direction and in the same lane"</Value>
+      <Value>"17 - had not observed a right of way sign"</Value>
+      <Value>"Counterparty Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"8 - striking the rear of the other vehicle while going in the
+              same direction and in the same lane"</Value>
+      <Value>: not("8 - striking the rear of the other vehicle while going in
+              the same direction and in the same lane", "10 - changing lanes",
+              "17 - had not observed a right of way sign")</Value>
+      <Value>"Insured Customer Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"9 - going in the same direction but in a different
+              lane"</Value>
+      <Value>"6 - entering a roundabout"</Value>
+      <Value>"Insured Customer Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"9 - going in the same direction but in a different
+              lane"</Value>
+      <Value>"16 - coming from the right at road junctions"</Value>
+      <Value>"Insured Customer Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"9 - going in the same direction but in a different
+              lane"</Value>
+      <Value>: not("6 - entering a roundabout", "9 - going in the same direction
+              but in a different lane", "16 - coming from the right at road
+              junctions")</Value>
+      <Value>"Counterparty Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"10 - changing lanes"</Value>
+      <Value>"6 - entering a roundabout"</Value>
+      <Value>"Counterparty Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"10 - changing lanes"</Value>
+      <Value>"15 - encroaching on a lane reserved for circulation in the
+              opposite direction"</Value>
+      <Value>"Counterparty Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"10 - changing lanes"</Value>
+      <Value>"17 - had not observed a right of way sign"</Value>
+      <Value>"Counterparty Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"10 - changing lanes"</Value>
+      <Value>: not("6 - entering a roundabout", "15 - encroaching on a lane
+              reserved for circulation in the opposite direction", "10 -
+              changing lanes", "17 - had not observed a right of way
+              sign")</Value>
+      <Value>"Insured Customer Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"11 - overtaking"</Value>
+      <Value>"6 - entering a roundabout"</Value>
+      <Value>"Counterparty Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"11 - overtaking"</Value>
+      <Value>"8 - striking the rear of the other vehicle while going in the
+              same direction and in the same lane"</Value>
+      <Value>"Counterparty Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"11 - overtaking"</Value>
+      <Value>"10 - changing lanes"</Value>
+      <Value>"Counterparty Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"11 - overtaking"</Value>
+      <Value>"13 - turning to the left"</Value>
+      <Value>"Counterparty Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"11 - overtaking"</Value>
+      <Value>"15 - encroaching on a lane reserved for circulation in the
+              opposite direction"</Value>
+      <Value>"Counterparty Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"11 - overtaking"</Value>
+      <Value>"17 - had not observed a right of way sign"</Value>
+      <Value>"Counterparty Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"11 - overtaking"</Value>
+      <Value>: not("6 - entering a roundabout", "8 - striking the rear of the
+              other vehicle while going in the same direction and in the same
+              lane", "10 - changing lanes", "11 - overtaking", "13 - turning to
+              the left", "15 - encroaching on a lane reserved for circulation in
+              the opposite direction", "17 - had not observed a right of way
+              sign")</Value>
+      <Value>"Insured Customer Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"12 - turning to the right"</Value>
+      <Value>"3 - entering a parking place"</Value>
+      <Value>"Insured Customer Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"12 - turning to the right"</Value>
+      <Value>"5 - entering a car park, private ground, a track"</Value>
+      <Value>"Insured Customer Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"12 - turning to the right"</Value>
+      <Value>"9 - going in the same direction but in a different
+              lane"</Value>
+      <Value>"Insured Customer Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"12 - turning to the right"</Value>
+      <Value>"16 - coming from the right at road junctions"</Value>
+      <Value>"Insured Customer Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"12 - turning to the right"</Value>
+      <Value>: not("3 - entering a parking place", "5 - entering a car park,
+              private ground, a track", "9 - going in the same direction but in
+              a different lane", "12 - turning to the right", "16 - coming from
+              the right at road junctions")</Value>
+      <Value>"Counterparty Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"13 - turning to the left"</Value>
+      <Value>"6 - entering a roundabout"</Value>
+      <Value>"Counterparty Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"13 - turning to the left"</Value>
+      <Value>"8 - striking the rear of the other vehicle while going in the
+              same direction and in the same lane"</Value>
+      <Value>"Counterparty Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"13 - turning to the left"</Value>
+      <Value>"10 - changing lanes"</Value>
+      <Value>"Counterparty Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"13 - turning to the left"</Value>
+      <Value>"15 - encroaching on a lane reserved for circulation in the
+              opposite direction"</Value>
+      <Value>"Counterparty Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"13 - turning to the left"</Value>
+      <Value>"17 - had not observed a right of way sign"</Value>
+      <Value>"Counterparty Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"13 - turning to the left"</Value>
+      <Value>: not("6 - entering a roundabout", "8 - striking the rear of the
+              other vehicle while going in the same direction and in the same
+              lane", "10 - changing lanes", "13 - turning to the left", "15 -
+              encroaching on a lane reserved for circulation in the opposite
+              direction", "17 - had not observed a right of way sign")</Value>
+      <Value>"Insured Customer Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"15 - encroaching on a lane reserved for circulation in the
+              opposite direction"</Value>
+      <Value>"6 - entering a roundabout"</Value>
+      <Value>"Counterparty Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"15 - encroaching on a lane reserved for circulation in the
+              opposite direction"</Value>
+      <Value>"8 - striking the rear of the other vehicle while going in the
+              same direction and in the same lane"</Value>
+      <Value>"Counterparty Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"15 - encroaching on a lane reserved for circulation in the
+              opposite direction"</Value>
+      <Value>"17 - had not observed a right of way sign"</Value>
+      <Value>"Counterparty Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"15 - encroaching on a lane reserved for circulation in the
+              opposite direction"</Value>
+      <Value>: not("6 - entering a roundabout", "8 - striking the rear of the
+              other vehicle while going in the same direction and in the same
+              lane", "15 - encroaching on a lane reserved for circulation in the
+              opposite direction", "17 - had not observed a right of way
+              sign")</Value>
+      <Value>"Insured Customer Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"16 - coming from the right at road junctions"</Value>
+      <Value>"6 - entering a roundabout"</Value>
+      <Value>"Insured Customer Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"16 - coming from the right at road junctions"</Value>
+      <Value>: not("6 - entering a roundabout", "16 - coming from the right at
+              road junctions")</Value>
+      <Value>"Counterparty Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"17 - had not observed a right of way sign"</Value>
+      <Value>"6 - entering a roundabout"</Value>
+      <Value>"Shared Liability"</Value>
+    </Row>
+    <Row>
+      <Value>"Liability Cannot Be Determined"</Value>
+      <Value>1</Value>
+      <Value>1</Value>
+      <Value>"17 - had not observed a right of way sign"</Value>
+      <Value>: not("6 - entering a roundabout", "17 - had not observed a right
+              of way sign")</Value>
+      <Value>"Insured Customer Liability"</Value>
+    </Row>
+  </Data>
+</DecisionTable>

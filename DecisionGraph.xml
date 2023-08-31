@@ -1,0 +1,32 @@
+<DRD name="DecisionGraph">
+  <Declaration>
+    <Define name="Insured Customer Number of Circumstances" direction="Local" />
+    <Define name="Insured Customer Accident Circumstances" type="Insured Customer Accident Circumstances" assembly="Glossaries\Concept.xml" direction="Local" />
+    <Define name="Counterparty Accident Circumstances" type="Counterparty Accident Circumstances" assembly="Glossaries\Concept.xml" direction="In" />
+    <Define name="Counterparty Number of Circumstances" direction="In" />
+  </Declaration>
+  <Nodes>
+    <Decision name="Decision69" expression="Insured Customer Number of Circumstances = Insured Customer Accident Circumstances|count()&#xD;&#xA;/*count(Insured Customer Accident Circumstances)*/">
+      <Transition name="Transition182" to="Decision71" relationType="Information" />
+    </Decision>
+    <Decision name="Decision70" expression="Counterparty Number of Circumstances = Counterparty Accident Circumstances|count()&#xD;&#xA;/* count(Counterparty Accident Circumstances) */">
+      <Transition name="Transition183" to="Decision73" relationType="Information" />
+    </Decision>
+    <Decision name="Decision71" uri="Insured Customer Accident Circumstance.xml" contextMode="Shared" type="Table">
+      <Transition name="Transition184" to="Decision75" relationType="Information" />
+    </Decision>
+    <Decision name="Decision73" uri="Counterparty Accident Circumstance.xml" contextMode="Shared" type="Table">
+      <Transition name="Transition185" to="Decision82" relationType="Information" />
+    </Decision>
+    <Decision name="Decision75" uri="Insured Customer Highest Circumstance Gravity.xml" contextMode="Shared" type="Table">
+      <Transition name="Transition186" to="Decision100" relationType="Information" />
+    </Decision>
+    <Decision name="Decision82" uri="Counterparty Highest Circumstance Gravity.xml" contextMode="Shared" type="Table">
+      <Transition name="Transition187" to="Decision100" relationType="Information" />
+    </Decision>
+    <Decision name="Decision100" uri="Circumstance Gravity Liability.xml" contextMode="Shared">
+      <Transition name="Transition172" to="Decision171" relationType="Information" />
+    </Decision>
+    <Decision name="Decision171" uri="Car Accident Liability.xml" contextMode="Shared" type="Table" />
+  </Nodes>
+</DRD>

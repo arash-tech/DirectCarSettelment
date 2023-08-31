@@ -1,0 +1,22 @@
+{
+    "CounterpartyAccidentCircumstancesInputData":[
+			"17 - had not observed a right of way sign"	
+		],
+    "InsuredCustomerAccidentCircumstancesInputData":[
+			"6 - entering a roundabout"	
+		],
+    "CarAccident":
+    {
+        "AccidentCountry":"Belgium",
+        "AccidentStatementMutualAgreement":true,
+        "ClaimType":"Collision"
+    },
+    "CounterpartyObject":
+    {
+        "VehicleType":"Car",
+        "VehicleCountryOfRegistration":"Belgium",
+        "VehicleInsuranceObligation":true,
+        "VehicleInsuranceStatus":"Insured",
+        "VehicleInsuranceCompany":"Yuzzu"
+    }
+}

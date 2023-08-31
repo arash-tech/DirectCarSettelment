@@ -1,0 +1,254 @@
+<Nodes version="2">
+  <NodeInfo name="Counterparty Object" type="Fact">
+    <Label>
+      <Text>Counterparty Object</Text>
+      <Font>
+        <Name>Microsoft Sans Serif</Name>
+        <Style>Regular</Style>
+        <Size>9</Size>
+      </Font>
+    </Label>
+    <FillColorFrom>-7876885</FillColorFrom>
+    <FillColorTo>-7876885</FillColorTo>
+    <Border>
+      <Color>-16777216</Color>
+      <Width>0.3</Width>
+    </Border>
+    <Location>
+      <X>-13.73745</X>
+      <Y>8.704166</Y>
+    </Location>
+    <Size>
+      <Width>73.02502</Width>
+      <Height>44.45</Height>
+    </Size>
+    <Description></Description>
+  </NodeInfo>
+  <NodeInfo name="CarAccident" type="Fact">
+    <Label>
+      <Text>CarAccident</Text>
+      <Font>
+        <Name>Microsoft Sans Serif</Name>
+        <Style>Regular</Style>
+        <Size>9</Size>
+      </Font>
+    </Label>
+    <FillColorFrom>-7876885</FillColorFrom>
+    <FillColorTo>-7876885</FillColorTo>
+    <Border>
+      <Color>-16777216</Color>
+      <Width>0.3</Width>
+    </Border>
+    <Location>
+      <X>68.28335</X>
+      <Y>13.56042</Y>
+    </Location>
+    <Size>
+      <Width>83.34373</Width>
+      <Height>28.04583</Height>
+    </Size>
+    <Description></Description>
+  </NodeInfo>
+  <NodeInfo name="Eligibility" type="Fact">
+    <Label>
+      <Text>Eligibility</Text>
+      <Font>
+        <Name>Microsoft Sans Serif</Name>
+        <Style>Regular</Style>
+        <Size>9</Size>
+      </Font>
+    </Label>
+    <FillColorFrom>-7876885</FillColorFrom>
+    <FillColorTo>-7876885</FillColorTo>
+    <Border>
+      <Color>-16777216</Color>
+      <Width>0.3</Width>
+    </Border>
+    <Location>
+      <X>228.7083</X>
+      <Y>24.44999</Y>
+    </Location>
+    <Size>
+      <Width>90.75209</Width>
+      <Height>60.325</Height>
+    </Size>
+    <Description></Description>
+  </NodeInfo>
+  <NodeInfo name="Circumstance" type="Fact">
+    <Label>
+      <Text>Circumstance</Text>
+      <Font>
+        <Name>Microsoft Sans Serif</Name>
+        <Style>Regular</Style>
+        <Size>9</Size>
+      </Font>
+    </Label>
+    <FillColorFrom>-7876885</FillColorFrom>
+    <FillColorTo>-7876885</FillColorTo>
+    <Border>
+      <Color>-16777216</Color>
+      <Width>0.3</Width>
+    </Border>
+    <Location>
+      <X>77.63116</X>
+      <Y>87.42088</Y>
+    </Location>
+    <Size>
+      <Width>54.28761</Width>
+      <Height>25.13535</Height>
+    </Size>
+    <Description></Description>
+  </NodeInfo>
+  <NodeInfo name="Insured Customer Accident Circumstances" type="Fact">
+    <Label>
+      <Text>Insured Customer Accident Circumstances</Text>
+      <Font>
+        <Name>Microsoft Sans Serif</Name>
+        <Style>Regular</Style>
+        <Size>9</Size>
+      </Font>
+    </Label>
+    <FillColorFrom>-7876885</FillColorFrom>
+    <FillColorTo>-7876885</FillColorTo>
+    <Border>
+      <Color>-16777216</Color>
+      <Width>0.3</Width>
+    </Border>
+    <Location>
+      <X>-15.45412</X>
+      <Y>76.30833</Y>
+    </Location>
+    <Size>
+      <Width>69.42291</Width>
+      <Height>24.07707</Height>
+    </Size>
+    <Description></Description>
+  </NodeInfo>
+  <NodeInfo name="Counterparty Accident Circumstances" type="Fact">
+    <Label>
+      <Text>Counterparty Accident Circumstances</Text>
+      <Font>
+        <Name>Microsoft Sans Serif</Name>
+        <Style>Regular</Style>
+        <Size>9</Size>
+      </Font>
+    </Label>
+    <FillColorFrom>-7876885</FillColorFrom>
+    <FillColorTo>-7876885</FillColorTo>
+    <Border>
+      <Color>-16777216</Color>
+      <Width>0.3</Width>
+    </Border>
+    <Location>
+      <X>143.825</X>
+      <Y>86.09791</Y>
+    </Location>
+    <Size>
+      <Width>70.64374</Width>
+      <Height>22.48957</Height>
+    </Size>
+    <Description></Description>
+  </NodeInfo>
+  <NodeInfo name="Circumstance Gravities" type="Fact">
+    <Label>
+      <Text>Circumstance Gravities</Text>
+      <Font>
+        <Name>Microsoft Sans Serif</Name>
+        <Style>Regular</Style>
+        <Size>9</Size>
+      </Font>
+    </Label>
+    <FillColorFrom>-7876885</FillColorFrom>
+    <FillColorTo>-7876885</FillColorTo>
+    <Border>
+      <Color>-16777216</Color>
+      <Width>0.3</Width>
+    </Border>
+    <Location>
+      <X>67.62504</X>
+      <Y>132.9291</Y>
+    </Location>
+    <Size>
+      <Width>102.9229</Width>
+      <Height>24.07709</Height>
+    </Size>
+    <Description></Description>
+  </NodeInfo>
+  <NodeInfo name="Liabilities" type="Fact">
+    <Label>
+      <Text>Liabilities</Text>
+      <Font>
+        <Name>Microsoft Sans Serif</Name>
+        <Style>Regular</Style>
+        <Size>9</Size>
+      </Font>
+    </Label>
+    <FillColorFrom>-7876885</FillColorFrom>
+    <FillColorTo>-7876885</FillColorTo>
+    <Border>
+      <Color>-16777216</Color>
+      <Width>0.3</Width>
+    </Border>
+    <Location>
+      <X>228.2271</X>
+      <Y>100.9146</Y>
+    </Location>
+    <Size>
+      <Width>72.76041</Width>
+      <Height>22.75416</Height>
+    </Size>
+    <Description></Description>
+  </NodeInfo>
+  <NodeInfo name="Transition208" type="Transition">
+    <Label>
+      <Text>Circumstance</Text>
+      <Font>
+        <Name>Microsoft Sans Serif</Name>
+        <Style>Regular</Style>
+        <Size>9</Size>
+      </Font>
+    </Label>
+    <FillColorFrom>-9868951</FillColorFrom>
+    <FillColorTo>-9868951</FillColorTo>
+    <Border>
+      <Color>-16777216</Color>
+      <Width>0.3</Width>
+    </Border>
+    <Location>
+      <X>53.66879</X>
+      <Y>86.00832</Y>
+    </Location>
+    <Size>
+      <Width>24.26237</Width>
+      <Height>6.971413</Height>
+    </Size>
+    <Shape>Polyline</Shape>
+    <SegmentCount>1</SegmentCount>
+    <Anchors>
+      <Origin>-1</Origin>
+      <Destination>-1</Destination>
+    </Anchors>
+    <Base>Rhombus</Base>
+    <Pen>0/#FF000000/0.3/0/0//0/0/10/</Pen>
+    <Points>
+      <Point>
+        <X>53.96879</X>
+        <Y>86.30833</Y>
+      </Point>
+      <Point>
+        <X>77.63116</X>
+        <Y>92.67973</Y>
+      </Point>
+      <Start>
+        <X>53.96879</X>
+        <Y>86.30833</Y>
+      </Start>
+      <End>
+        <X>77.63116</X>
+        <Y>92.67973</Y>
+      </End>
+    </Points>
+    <Fact reference="Insured Customer Accident Circumstances.Circumstance" to="Circumstance" />
+    <Description></Description>
+  </NodeInfo>
+</Nodes>

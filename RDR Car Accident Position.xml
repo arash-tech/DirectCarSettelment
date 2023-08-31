@@ -1,0 +1,6 @@
+<Procedure name="RDR Car Accident Position">
+  <Scope>
+    <Var name="Insured Customer Number of Circumstances" value="count(Insured Customer Accident Circumstances)" />
+    <Var name="Counterparty Number of Circumstances" value="count(Counterparty Accident Circumstances)" />
+  </Scope>
+</Procedure>

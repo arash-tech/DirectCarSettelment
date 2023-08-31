@@ -1,0 +1,27 @@
+<DecisionTable name="RDR Clearing Eligibility" processAll="False">
+  <Declaration>
+    <Define name="fact" type="xml" direction="InOut" />
+  </Declaration>
+  <Columns>
+    <Condition name="Car Accident RDR Eligibility" expression="Eligibility.CarAccidentRDREligibility" />
+    <Condition name="Counterparty Object RDR Eligibility" expression="Eligibility.CounterpartyRDREligibility" />
+    <Action name="RDR Clearing Eligibility" expression="Eligibility.RDRClearingEligibility" />
+  </Columns>
+  <Data>
+    <Row>
+      <Value>Eligible</Value>
+      <Value>Eligible</Value>
+      <Value>Eligible</Value>
+    </Row>
+    <Row>
+      <Value>Not Eligible</Value>
+      <Value></Value>
+      <Value>Not Eligible</Value>
+    </Row>
+    <Row>
+      <Value></Value>
+      <Value>Not Eligible</Value>
+      <Value></Value>
+    </Row>
+  </Data>
+</DecisionTable>

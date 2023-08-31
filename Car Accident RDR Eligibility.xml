@@ -1,0 +1,40 @@
+<DecisionTable name="Car Accident RDR Eligibility" processAll="False">
+  <Declaration>
+    <Define name="Car Accident RDR Eligibility" direction="Out" />
+  </Declaration>
+  <Glossary>
+    <GlossarySource uri="Glossaries\BusinessTerms.xml" />
+  </Glossary>
+  <Columns>
+    <Condition name="Accident Country" expression="CarAccident.AccidentCountry" />
+    <Condition name="Accident Statement Mutual Agreement" expression="CarAccident.AccidentStatementMutualAgreement" />
+    <Condition name="Claim Type" expression="CarAccident.ClaimType" />
+    <Action name="Car Accident RDR Eligibility" term="Eligibility" variable="Car Accident RDR Eligibility" />
+  </Columns>
+  <Data>
+    <Row>
+      <Value>Belgium</Value>
+      <Value>true</Value>
+      <Value>Collision</Value>
+      <Value>Eligible</Value>
+    </Row>
+    <Row>
+      <Value>!Belgium</Value>
+      <Value></Value>
+      <Value></Value>
+      <Value>Not Eligible</Value>
+    </Row>
+    <Row>
+      <Value></Value>
+      <Value>false</Value>
+      <Value></Value>
+      <Value>Not Eligible</Value>
+    </Row>
+    <Row>
+      <Value></Value>
+      <Value></Value>
+      <Value>Other</Value>
+      <Value>Not Eligible</Value>
+    </Row>
+  </Data>
+</DecisionTable>

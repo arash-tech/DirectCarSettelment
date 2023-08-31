@@ -1,0 +1,41 @@
+<Concept namespace="Scopes">
+  <Fact name="Counterparty Object">
+    <Property name="Vehicle Type" type="string" />
+    <Property name="Vehicle Country Of Registration" type="string" />
+    <Property name="Vehicle Insurance Obligation" type="bool" />
+    <Property name="Vehicle Insurance Status" type="string" />
+    <Property name="VehicleInsuranceCompany" type="string" />
+  </Fact>
+  <Fact name="CarAccident">
+    <Property name="AccidentCountry" type="string" />
+    <Property name="AccidentStatementMutualAgreement" type="bool" />
+    <Property name="ClaimType" type="string" />
+  </Fact>
+  <Fact name="Eligibility">
+    <Property name="RDRClearingEligibility" type="string" />
+    <Property name="CarAccidentLiability" type="string" />
+    <Property name="RDRCarAccidentPosition" type="string" />
+    <Property name="CounterpartyInsuranceRDRAffiliated" type="bool" />
+    <Property name="CounterpartyRDREligibility" type="string" />
+    <Property name="CarAccidentRDREligibility" type="string" />
+    <Property name="Gravity" type="string" />
+  </Fact>
+  <Fact name="Circumstance">
+    <Property name="Gravity" type="string" />
+    <Property name="Input Circumstance" type="string" />
+  </Fact>
+  <Fact name="Insured Customer Accident Circumstances">
+    <Property name="Circumstance" fact="Circumstance" isArray="True" />
+  </Fact>
+  <Fact name="Counterparty Accident Circumstances">
+    <Property name="Circumstance" type="int" />
+    <Property name="Gravity" type="string" />
+  </Fact>
+  <Fact name="Circumstance Gravities">
+    <Property name="Insured Customer Highest Circumstance Gravity" type="string" />
+    <Property name="Counterparty Highest Circumstance Gravity" type="string" />
+  </Fact>
+  <Fact name="Liabilities">
+    <Property name="Circumstance Gravity Liability" type="string" />
+  </Fact>
+</Concept>

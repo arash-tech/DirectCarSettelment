@@ -1,0 +1,6 @@
+<Glossary name="sample glossary">
+  <Term name="Eligibility" expression="Counterparty Object RDR Eligibility" domain="Options">
+    <Option value="Eligible" />
+    <Option value="Not Eligible" />
+  </Term>
+</Glossary>

@@ -1,0 +1,38 @@
+<DecisionTable name="_D684E53C-B671-422A-91B8-DC2BF225689D" processAll="False">
+  <Declaration>
+    <Define name="Car Accident Liability" direction="In" />
+    <Define name="Result" direction="Out" />
+  </Declaration>
+  <Columns>
+    <Condition name="RDR Clearing Eligibility" expression="Eligibility.RDRClearingEligibility" />
+    <Condition name="Car Accident Liability" expression="Car Accident Liability" />
+    <Action name="RDR Car Accident Position" expression="Result" />
+  </Columns>
+  <Data>
+    <Row>
+      <Value>Eligible</Value>
+      <Value>Insured Customer Liability</Value>
+      <Value>RDR - Insured Customer Liability</Value>
+    </Row>
+    <Row>
+      <Value>Eligible</Value>
+      <Value>Counterparty Liability</Value>
+      <Value>RDR - Counterparty Liability</Value>
+    </Row>
+    <Row>
+      <Value>Eligible</Value>
+      <Value>Shared Liability</Value>
+      <Value>RDR - Shared Liability</Value>
+    </Row>
+    <Row>
+      <Value>Not Eligible</Value>
+      <Value></Value>
+      <Value>No RDR Applicable</Value>
+    </Row>
+    <Row>
+      <Value></Value>
+      <Value>Liability Cannot Be Determined</Value>
+      <Value>No RDR Applicable</Value>
+    </Row>
+  </Data>
+</DecisionTable>

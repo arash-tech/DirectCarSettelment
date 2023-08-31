@@ -1,0 +1,85 @@
+<Concept namespace="D3826a222Eea4E5b9390090Ab871b1c0.Js">
+  <Option name="Circumstance Gravities">
+    <Property name="Extremely Inculpatory" />
+    <Property name="Protecting" />
+    <Property name="Neutral" />
+    <Property name="Inculpatory" />
+  </Option>
+  <Option name="Circumstances">
+    <Property name="1 - parked/stopped" />
+    <Property name="2 - leaving a parking place" />
+    <Property name="2bis - opening the door" />
+    <Property name="3 - entering a parking place" />
+    <Property name="4 - emerging from a car park, from private ground, from a track" />
+    <Property name="5 - entering a car park, private ground, a track" />
+    <Property name="6 - entering a roundabout" />
+    <Property name="7 - circulating a roundabout" />
+    <Property name="8 - striking the rear of the other vehicle while going in the same direction and in the same lane" />
+    <Property name="9 - going in the same direction but in a different lane" />
+    <Property name="10 - changing lanes" />
+    <Property name="11 - overtaking" />
+    <Property name="12 - turning to the right" />
+    <Property name="13 - turning to the left" />
+    <Property name="14 - reversing" />
+    <Property name="15 - encroaching on a lane reserved for circulation in the opposite direction" />
+    <Property name="16 - coming from the right at road junctions" />
+    <Property name="17 - had not observed a right of way sign" />
+    <Property name="17bis - had not observed a red light" />
+  </Option>
+  <Option name="Vehicle Type">
+    <Property name="Truck" />
+    <Property name="Bicycle" />
+    <Property name="Bus" />
+    <Property name="Car" />
+    <Property name="Lawn Mower" />
+    <Property name="Motorcycle" />
+  </Option>
+  <Option name="Countries">
+    <Property name="Belgium" />
+    <Property name="Netherlands" />
+    <Property name="Luxembourg" />
+    <Property name="United Kingdom" />
+    <Property name="Ireland" />
+    <Property name="Denmark" />
+    <Property name="Norway" />
+    <Property name="Sweden" />
+    <Property name="Finland" />
+    <Property name="Germany" />
+    <Property name="France" />
+    <Property name="Spain" />
+    <Property name="Portugal" />
+  </Option>
+  <Fact name="Circumstances List">
+    <Property name="Circumstances" fact="Circumstances" isArray="True" />
+  </Fact>
+  <Fact name="Circumstance and Gravity">
+    <Property name="Circumstance" fact="Circumstances" />
+    <Property name="Gravity" fact="Circumstance Gravities" />
+  </Fact>
+  <Fact name="Circumstances and Gravities List">
+    <Property name="Circumstance and Gravity" fact="Circumstance and Gravity" isArray="True" />
+  </Fact>
+  <Fact name="Company List">
+    <Property name="Company" type="string" isArray="True" />
+  </Fact>
+  <Fact name="Object Input Data">
+    <Property name="Vehicle Type" fact="Vehicle Type" />
+    <Property name="Vehicle Insurance Obligation" type="bool" />
+    <Property name="Vehicle Country of Registration" fact="Countries" />
+    <Property name="Vehicle Insurance Company" type="string" />
+    <Property name="Vehicle Insurance Status" fact="Insurance Status" />
+  </Fact>
+  <Option name="Insurance Status">
+    <Property name="Insured" />
+    <Property name="Not Insured" />
+  </Option>
+  <Fact name="Car Accident">
+    <Property name="Accident Statement Mutual Agreement" type="bool" />
+    <Property name="Accident Country" fact="Countries" />
+    <Property name="Claim Type" fact="Claim Type" />
+  </Fact>
+  <Option name="Claim Type">
+    <Property name="Other" />
+    <Property name="Collision" />
+  </Option>
+</Concept>

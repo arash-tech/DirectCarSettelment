@@ -1,0 +1,22 @@
+<DecisionTable name="Counterparty Insurance RDR Affiliated" processAll="False">
+  <Declaration>
+    <Define name="Counterparty Insurance RDR Affiliated" type="bool" direction="Local" />
+  </Declaration>
+  <Glossary>
+    <GlossarySource uri="Glossaries\BoxedExpressions.xml" />
+  </Glossary>
+  <Columns>
+    <Condition name="Is Counterparty Insurance, RDR Affiliated Company?" expression="RDR_Affiliated_Companies.Company|contains (Counterparty Object.Vehicle Insurance Company)" />
+    <Action name="Counterparty Insurance RDR Affiliated?" expression="Counterparty Insurance RDR Affiliated" />
+  </Columns>
+  <Data>
+    <Row>
+      <Value>true</Value>
+      <Value>true</Value>
+    </Row>
+    <Row>
+      <Value>false</Value>
+      <Value>false</Value>
+    </Row>
+  </Data>
+</DecisionTable>

@@ -1,0 +1,19 @@
+<DecisionTable name="Motor Vehicle" processAll="False">
+  <Declaration>
+    <Define name="Motor Vehicle" type="bool" direction="Local" />
+  </Declaration>
+  <Columns>
+    <Condition name="Counterparty Object.Vehicle Type" expression="Counterparty Object.Vehicle Type|in($value)" />
+    <Action name="Motor Vehicle" expression="Motor Vehicle" />
+  </Columns>
+  <Data>
+    <Row>
+      <Value>"Car","Truck","Bus","Lawn Mower","Motorcycle"</Value>
+      <Value>true</Value>
+    </Row>
+    <Row>
+      <Value>"Bicycle"</Value>
+      <Value>false</Value>
+    </Row>
+  </Data>
+</DecisionTable>

@@ -1,0 +1,63 @@
+<DecisionTable name="Circumstance Gravity Liability" processAll="False">
+  <Declaration>
+    <Define name="Circumstance Gravities" type="Circumstance Gravities" assembly="Glossaries\Concept.xml" direction="In" />
+    <Define name="Circumstance Gravity Liability" direction="Out" />
+  </Declaration>
+  <Columns>
+    <Condition name="Insured Customer Highest Circumstance Gravity" expression="Circumstance Gravities.Insured Customer Highest Circumstance Gravity" />
+    <Condition name="Counterparty Highest Circumstance Gravity" expression="Circumstance Gravities.Counterparty Highest Circumstance Gravity" />
+    <Action name="Circumstance Gravity Liability" expression="Circumstance Gravity Liability" />
+  </Columns>
+  <Data>
+    <Row>
+      <Value>Extremely Inculpatory</Value>
+      <Value>Extremely Inculpatory</Value>
+      <Value>Shared Liability</Value>
+    </Row>
+    <Row>
+      <Value>Extremely Inculpatory</Value>
+      <Value>! Extremely Inculpatory</Value>
+      <Value>Insured Customer Liability</Value>
+    </Row>
+    <Row>
+      <Value>! Extremely Inculpatory</Value>
+      <Value>Extremely Inculpatory</Value>
+      <Value>Counterparty Liability</Value>
+    </Row>
+    <Row>
+      <Value>Inculpatory</Value>
+      <Value>Inculpatory</Value>
+      <Value>Shared Liability</Value>
+    </Row>
+    <Row>
+      <Value>Inculpatory</Value>
+      <Value>! Inculpatory</Value>
+      <Value>Insured Customer Liability</Value>
+    </Row>
+    <Row>
+      <Value>! Inculpatory</Value>
+      <Value>Inculpatory</Value>
+      <Value>Counterparty Liability</Value>
+    </Row>
+    <Row>
+      <Value>Protecting</Value>
+      <Value>Protecting</Value>
+      <Value>Shared Liability</Value>
+    </Row>
+    <Row>
+      <Value>Protecting</Value>
+      <Value>! Protecting</Value>
+      <Value>Counterparty Liability</Value>
+    </Row>
+    <Row>
+      <Value>!Protecting or !Inculpatory or !Extremely Inculpatory</Value>
+      <Value>Protecting</Value>
+      <Value>Insured Customer Liability</Value>
+    </Row>
+    <Row>
+      <Value>Neutral</Value>
+      <Value>Neutral</Value>
+      <Value>Liability Cannot Be Determined</Value>
+    </Row>
+  </Data>
+</DecisionTable>

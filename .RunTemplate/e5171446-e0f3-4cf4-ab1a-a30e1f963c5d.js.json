@@ -1,0 +1,10 @@
+{
+    "Counterparty Object":
+    {
+        "Vehicle Type":"Truck",
+        "Vehicle Insurance Obligation":true,
+        "Vehicle Country of Registration":"Belgium",
+        "Vehicle Insurance Company":"ABN Amro Life SA",
+        "Vehicle Insurance Status":"Insured"
+    }
+}

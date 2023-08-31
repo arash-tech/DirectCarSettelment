@@ -1,0 +1,25 @@
+<DecisionTable name="Insured Customer Accident Circumstance" processAll="False">
+  <Declaration>
+    <Define name="Insured Customer Number of Circumstances" direction="In" />
+    <Define name="Insured Customer Accident Circumstances" type="Insured Customer Accident Circumstances" assembly="Glossaries\Concept.xml" direction="In" />
+    <Define name="Insured Customer Accident Circumstance" direction="Out" />
+  </Declaration>
+  <Columns>
+    <Condition name="Insured Customer Number of Circumstances" expression="Insured Customer Number of Circumstances" />
+    <Action name="Insured Customer Accident Circumstance" expression="Insured Customer Accident Circumstance" />
+  </Columns>
+  <Data>
+    <Row>
+      <Value>0</Value>
+      <Value>null</Value>
+    </Row>
+    <Row>
+      <Value>1</Value>
+      <Value>Insured Customer Accident Circumstances.Circumstance|min()</Value>
+    </Row>
+    <Row>
+      <Value>&gt;1</Value>
+      <Value>null</Value>
+    </Row>
+  </Data>
+</DecisionTable>

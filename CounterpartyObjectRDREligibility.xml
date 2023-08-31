@@ -1,0 +1,69 @@
+<DecisionTable name="CounterpartyObjectRDREligibility" processAll="True">
+  <Declaration>
+    <Define name="Counterparty Object RDR Eligibility" direction="Out" />
+    <Define name="Counterparty Insurance RDR Affiliated" type="bool" direction="In" />
+    <Define name="Motor Vehicle" type="bool" direction="In" />
+  </Declaration>
+  <Glossary>
+    <GlossarySource uri="Glossaries\BusinessTerms.xml" />
+    <GlossarySource uri="Glossaries\BoxedExpressions.xml" />
+  </Glossary>
+  <Columns>
+    <Condition name="Motor Vehicle" expression="Motor Vehicle" />
+    <Condition name="Counterparty Vehicle Country of Registration" expression="Counterparty Object.Vehicle Country of Registration" />
+    <Condition name="Counterparty Vehicle Insurance Obligation" expression="Counterparty Object.Vehicle Insurance Obligation" />
+    <Condition name="Counterparty Vehicle Insurance Status" expression="Counterparty Object.Vehicle Insurance Status" />
+    <Condition name="Counterparty Insurance RDR Affiliated" expression="Counterparty Insurance RDR Affiliated" />
+    <Action name="Counerparty Object RDR Eligibility" term="Eligibility" variable="Counterparty Object RDR Eligibility" />
+  </Columns>
+  <Data>
+    <Row>
+      <Value>true</Value>
+      <Value>Belgium</Value>
+      <Value>true</Value>
+      <Value>Insured</Value>
+      <Value>true</Value>
+      <Value>Eligible</Value>
+    </Row>
+    <Row>
+      <Value>true</Value>
+      <Value>Belgium</Value>
+      <Value>true</Value>
+      <Value>Not Insured</Value>
+      <Value></Value>
+      <Value>Eligible</Value>
+    </Row>
+    <Row>
+      <Value>false</Value>
+      <Value></Value>
+      <Value></Value>
+      <Value></Value>
+      <Value></Value>
+      <Value>Not Eligible</Value>
+    </Row>
+    <Row>
+      <Value></Value>
+      <Value> ! Belgium</Value>
+      <Value></Value>
+      <Value></Value>
+      <Value></Value>
+      <Value>Not Eligible</Value>
+    </Row>
+    <Row>
+      <Value></Value>
+      <Value></Value>
+      <Value>false</Value>
+      <Value></Value>
+      <Value></Value>
+      <Value>Not Eligible</Value>
+    </Row>
+    <Row>
+      <Value></Value>
+      <Value></Value>
+      <Value></Value>
+      <Value>Insured</Value>
+      <Value>false</Value>
+      <Value>Not Eligible</Value>
+    </Row>
+  </Data>
+</DecisionTable>
