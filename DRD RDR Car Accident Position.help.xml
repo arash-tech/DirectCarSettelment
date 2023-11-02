@@ -127,7 +127,7 @@
         <Height>21.90623</Height>
       </Size>
       <Location>
-        <X>144.5818</X>
+        <X>145.7468</X>
         <Y>70.45257</Y>
       </Location>
       <Alignment>
@@ -144,7 +144,7 @@
       <Width>0</Width>
     </Border>
     <Location>
-      <X>144.9626</X>
+      <X>146.1276</X>
       <Y>75.74424</Y>
     </Location>
     <Size>
@@ -648,11 +648,11 @@
       <Width>0.3</Width>
     </Border>
     <Location>
-      <X>164.7137</X>
+      <X>165.6672</X>
       <Y>52.34999</Y>
     </Location>
     <Size>
-      <Width>27.18761</Width>
+      <Width>26.44261</Width>
       <Height>23.69425</Height>
     </Size>
     <Shape>Polyline</Shape>
@@ -665,19 +665,19 @@
     <Pen>0/#FF000000/0.3/0/0//0/0/10/</Pen>
     <Points>
       <Point>
-        <X>165.0137</X>
+        <X>165.9672</X>
         <Y>75.74424</Y>
       </Point>
       <Point>
-        <X>191.6013</X>
+        <X>191.8098</X>
         <Y>52.64999</Y>
       </Point>
       <Start>
-        <X>165.0137</X>
+        <X>165.9672</X>
         <Y>75.74424</Y>
       </Start>
       <End>
-        <X>191.6013</X>
+        <X>191.8098</X>
         <Y>52.64999</Y>
       </End>
     </Points>
@@ -698,11 +698,11 @@
       <Width>0.3</Width>
     </Border>
     <Location>
-      <X>206.4683</X>
+      <X>206.4455</X>
       <Y>52.34999</Y>
     </Location>
     <Size>
-      <Width>27.95021</Width>
+      <Width>27.9682</Width>
       <Height>23.69425</Height>
     </Size>
     <Shape>Polyline</Shape>
@@ -715,19 +715,19 @@
     <Pen>0/#FF000000/0.3/0/0//0/0/10/</Pen>
     <Points>
       <Point>
-        <X>234.1185</X>
+        <X>234.1137</X>
         <Y>75.74424</Y>
       </Point>
       <Point>
-        <X>206.7683</X>
+        <X>206.7455</X>
         <Y>52.64999</Y>
       </Point>
       <Start>
-        <X>234.1185</X>
+        <X>234.1137</X>
         <Y>75.74424</Y>
       </Start>
       <End>
-        <X>206.7683</X>
+        <X>206.7455</X>
         <Y>52.64999</Y>
       </End>
     </Points>
@@ -798,11 +798,11 @@
       <Width>0.3</Width>
     </Border>
     <Location>
-      <X>157.5064</X>
+      <X>158.4161</X>
       <Y>88.40881</Y>
     </Location>
     <Size>
-      <Width>1.226608</Width>
+      <Width>0.6000061</Width>
       <Height>16.51619</Height>
     </Size>
     <Shape>Polyline</Shape>
@@ -815,19 +815,19 @@
     <Pen>0/#FF000000/0.3/0/0//0/0/10/</Pen>
     <Points>
       <Point>
-        <X>158.433</X>
+        <X>158.7161</X>
         <Y>104.625</Y>
       </Point>
       <Point>
-        <X>157.8064</X>
+        <X>158.7161</X>
         <Y>88.70882</Y>
       </Point>
       <Start>
-        <X>158.433</X>
+        <X>158.7161</X>
         <Y>104.625</Y>
       </Start>
       <End>
-        <X>157.8064</X>
+        <X>158.7161</X>
         <Y>88.70882</Y>
       </End>
     </Points>

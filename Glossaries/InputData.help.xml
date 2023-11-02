@@ -115,11 +115,11 @@
       <Width>0.3</Width>
     </Border>
     <Location>
-      <X>124.8185</X>
-      <Y>45.44345</Y>
+      <X>119.2623</X>
+      <Y>62.37679</Y>
     </Location>
     <Size>
-      <Width>73.12708</Width>
+      <Width>73.12709</Width>
       <Height>23.95</Height>
     </Size>
     <Description></Description>
@@ -299,7 +299,7 @@
     </Size>
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition122" type="Transition">
+  <NodeInfo name="Transition43" type="Transition">
     <Label>
       <Text>Gravity</Text>
       <Font>
@@ -351,7 +351,7 @@
     <Fact reference="Circumstance and Gravity.Gravity" to="Circumstance Gravities" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition123" type="Transition">
+  <NodeInfo name="Transition44" type="Transition">
     <Label>
       <Text>Circumstance and Gravity</Text>
       <Font>
@@ -403,7 +403,7 @@
     <Fact reference="Circumstances and Gravities List.Circumstance and Gravity" to="Circumstance and Gravity" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition124" type="Transition">
+  <NodeInfo name="Transition45" type="Transition">
     <Label>
       <Text>Vehicle Type</Text>
       <Font>
@@ -463,7 +463,7 @@
     <Fact reference="Object Input Data.Vehicle Type" to="Vehicle Type" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition125" type="Transition">
+  <NodeInfo name="Transition46" type="Transition">
     <Label>
       <Text>Vehicle Country of Registration</Text>
       <Font>
@@ -523,7 +523,7 @@
     <Fact reference="Object Input Data.Vehicle Country of Registration" to="Countries" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition126" type="Transition">
+  <NodeInfo name="Transition47" type="Transition">
     <Label>
       <Text>Vehicle Insurance Status</Text>
       <Font>
@@ -583,7 +583,7 @@
     <Fact reference="Object Input Data.Vehicle Insurance Status" to="Insurance Status" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition127" type="Transition">
+  <NodeInfo name="Transition48" type="Transition">
     <Label>
       <Text>Claim Type</Text>
       <Font>
@@ -635,7 +635,7 @@
     <Fact reference="Car Accident.Claim Type" to="Claim Type" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition128" type="Transition">
+  <NodeInfo name="Transition49" type="Transition">
     <Label>
       <Text>Circumstance</Text>
       <Font>
@@ -687,7 +687,7 @@
     <Fact reference="Circumstance and Gravity.Circumstance" to="Circumstances" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition129" type="Transition">
+  <NodeInfo name="Transition50" type="Transition">
     <Label>
       <Text>Circumstances</Text>
       <Font>
@@ -703,12 +703,12 @@
       <Width>0.3</Width>
     </Border>
     <Location>
-      <X>197.6455</X>
-      <Y>55.14345</Y>
+      <X>192.0893</X>
+      <Y>70.07497</Y>
     </Location>
     <Size>
-      <Width>59.21849</Width>
-      <Height>6.310207</Height>
+      <Width>64.77469</Width>
+      <Height>2.601822</Height>
     </Size>
     <Shape>Polyline</Shape>
     <SegmentCount>1</SegmentCount>
@@ -720,26 +720,26 @@
     <Pen>0/#FF000000/0.3/0/0//0/0/10/</Pen>
     <Points>
       <Point>
-        <X>197.9455</X>
-        <Y>55.44345</Y>
+        <X>192.3893</X>
+        <Y>72.37679</Y>
       </Point>
       <Point>
         <X>256.564</X>
-        <Y>61.15366</Y>
+        <Y>70.37498</Y>
       </Point>
       <Start>
-        <X>197.9455</X>
-        <Y>55.44345</Y>
+        <X>192.3893</X>
+        <Y>72.37679</Y>
       </Start>
       <End>
         <X>256.564</X>
-        <Y>61.15366</Y>
+        <Y>70.37498</Y>
       </End>
     </Points>
     <Fact reference="Circumstances List.Circumstances" to="Circumstances" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition130" type="Transition">
+  <NodeInfo name="Transition51" type="Transition">
     <Label>
       <Text>Accident Country</Text>
       <Font>

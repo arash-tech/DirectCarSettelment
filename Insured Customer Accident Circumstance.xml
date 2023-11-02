@@ -1,8 +1,7 @@
 <DecisionTable name="Insured Customer Accident Circumstance" processAll="False">
   <Declaration>
-    <Define name="Insured Customer Number of Circumstances" direction="In" />
-    <Define name="Insured Customer Accident Circumstances" type="Insured Customer Accident Circumstances" assembly="Glossaries\Concept.xml" direction="In" />
-    <Define name="Insured Customer Accident Circumstance" direction="Out" />
+    <Define name="Insured Customer Number of Circumstances" type="int" direction="In" />
+    <Define name="Insured Customer Accident Circumstance" type="Circumstances" assembly="Glossaries\InputData.xml" direction="Out" />
   </Declaration>
   <Columns>
     <Condition name="Insured Customer Number of Circumstances" expression="Insured Customer Number of Circumstances" />
@@ -15,7 +14,7 @@
     </Row>
     <Row>
       <Value>1</Value>
-      <Value>Insured Customer Accident Circumstances.Circumstance|min()</Value>
+      <Value>:Insured Customer Accident Circumstances.Circumstance|min()</Value>
     </Row>
     <Row>
       <Value>&gt;1</Value>

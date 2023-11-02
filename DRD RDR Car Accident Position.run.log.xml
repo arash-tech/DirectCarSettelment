@@ -1,19 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ExecTemplate>
-  <Record date="2023-06-14T01:56:00.3691684Z" file="DRD RDR Car Accident Position.xml" title="Test1" description="Company = Yuzzu">
-    <Run providerType="JSONComposer" file=".RunTemplate\d3826a22-2eea-4e5b-9390-090ab871b1c0.js.json" />
-    <Options input="1" target="0" logic="" />
-  </Record>
-  <Record date="2023-08-24T01:17:09.6633789Z" file="DRD RDR Car Accident Position.xml" title="T2">
-    <Run providerType="JSONComposer" file=".RunTemplate\45d0c6a8-a7bd-4c0a-99d3-7bb88be3c731.js.json" />
-    <Options input="1" target="0" logic="" />
-  </Record>
-  <Record date="2023-08-31T01:19:33.1626858Z" file="DRD RDR Car Accident Position.xml" title="arash">
-    <Run providerType="JSONComposer" file=".RunTemplate\76bc504d-a31e-47fc-a09e-221612306dc5.js.json" />
-    <Options input="1" target="0" logic="" />
-  </Record>
   <Record date="2023-08-31T01:31:54.7388279Z" file="DRD RDR Car Accident Position.xml" title="arash2">
     <Run providerType="JSONComposer" file=".RunTemplate\a6e8f5af-18dd-4a71-bfd1-72fcd919c92f.js.json" />
+    <Options input="1" target="0" logic="" />
+  </Record>
+  <Record date="2023-11-01T03:18:03.4781188Z" file="DRD RDR Car Accident Position.xml" title="TestRR">
+    <Run providerType="JSONComposer" file=".RunTemplate\ee32f950-9df3-4be9-9409-88d5e13917df.js.json" />
+    <Options input="1" target="0" logic="" />
+  </Record>
+  <Record date="2023-11-02T00:41:59.4182709Z" file="DRD RDR Car Accident Position.xml" title="Testing List Type">
+    <Run providerType="JSONComposer" file=".RunTemplate\4de7f4a6-7827-42ac-b9b4-696594829dac.js.json" />
     <Options input="1" target="0" logic="" />
   </Record>
 </ExecTemplate>

@@ -1,7 +1,7 @@
 <DecisionTable name="Counterparty Accident Circumstance" processAll="False">
   <Declaration>
-    <Define name="Counterparty Number of Circumstances" type="Counterparty Accident Circumstances" assembly="Glossaries\Concept.xml" direction="In" />
-    <Define name="Counterparty Number of Circumstance" direction="Out" />
+    <Define name="Counterparty Number of Circumstances" type="int" direction="In" />
+    <Define name="Counterparty Accident Circumstance" type="Circumstances" assembly="Glossaries\InputData.xml" direction="Out" value="[]" />
   </Declaration>
   <Columns>
     <Condition name="Counterparty Number of Circumstances" expression="Counterparty Number of Circumstances" />
@@ -14,7 +14,7 @@
     </Row>
     <Row>
       <Value>1</Value>
-      <Value>Counterparty Accident Circumstances.Circumstance|min()</Value>
+      <Value>:Counterparty Accident Circumstances.Circumstance|min()</Value>
     </Row>
     <Row>
       <Value>&gt;1</Value>

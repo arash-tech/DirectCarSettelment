@@ -1,9 +1,9 @@
 <DRD name="DecisionGraph">
   <Declaration>
-    <Define name="Insured Customer Number of Circumstances" direction="Local" />
-    <Define name="Insured Customer Accident Circumstances" type="Insured Customer Accident Circumstances" assembly="Glossaries\Concept.xml" direction="Local" />
-    <Define name="Counterparty Accident Circumstances" type="Counterparty Accident Circumstances" assembly="Glossaries\Concept.xml" direction="In" />
-    <Define name="Counterparty Number of Circumstances" direction="In" />
+    <Define name="Insured Customer Number of Circumstances" type="int" direction="Local" />
+    <Define name="Insured Customer Accident Circumstances" type="Circumstances and Gravities List" assembly="Glossaries\InputData.xml" direction="In" value="[]" />
+    <Define name="Counterparty Accident Circumstances" type="Circumstances and Gravities List" assembly="Glossaries\InputData.xml" direction="In" value="[]" />
+    <Define name="Counterparty Number of Circumstances" type="int" direction="Local" />
   </Declaration>
   <Nodes>
     <Decision name="Decision69" expression="Insured Customer Number of Circumstances = Insured Customer Accident Circumstances|count()&#xD;&#xA;/*count(Insured Customer Accident Circumstances)*/">
@@ -16,7 +16,7 @@
       <Transition name="Transition184" to="Decision75" relationType="Information" />
     </Decision>
     <Decision name="Decision73" uri="Counterparty Accident Circumstance.xml" contextMode="Shared" type="Table">
-      <Transition name="Transition185" to="Decision82" relationType="Information" />
+      <Transition name="Transition170" to="Decision82" relationType="Information" />
     </Decision>
     <Decision name="Decision75" uri="Insured Customer Highest Circumstance Gravity.xml" contextMode="Shared" type="Table">
       <Transition name="Transition186" to="Decision100" relationType="Information" />

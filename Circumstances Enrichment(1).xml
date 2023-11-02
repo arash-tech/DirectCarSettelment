@@ -1,12 +1,12 @@
 <DecisionTable name="Circumstances Enrichment" processAll="True">
   <Declaration>
-    <Define name="Circumstance" type="Circumstance" assembly="Glossaries\Concept.xml" direction="Out" />
+    <Define name="Circumstances Enrichment" type="Circumstance and Gravity" assembly="Glossaries\InputData.xml" direction="Out" />
     <Define name="circumstance" direction="In" />
   </Declaration>
   <Columns>
     <Condition name="Input Circumstance" expression="circumstance |in($value)" />
-    <Action name="Circumstance" expression="Circumstance.Input Circumstance" />
-    <Action name="Gravity" expression="Circumstance.Gravity&amp;#13;&amp;#10;/*Circumstance Gravities*/" />
+    <Action name="Circumstance" expression="Circumstances Enrichment.Circumstance" />
+    <Action name="Gravity" expression="Circumstances Enrichment.Gravity&amp;#13;&amp;#10;/*Circumstance Gravities*/" />
   </Columns>
   <Data>
     <Row>
