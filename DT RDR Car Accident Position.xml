@@ -1,13 +1,13 @@
 <DecisionTable name="_D684E53C-B671-422A-91B8-DC2BF225689D" processAll="False">
   <Declaration>
     <Define name="Car Accident Liability" direction="In" />
-    <Define name="Result" direction="Out" />
+    <Define name="RDR Car Accident Position" type="RDR Car Accident Positions" assembly="Glossaries\InputData.xml" direction="Out" />
     <Define name="RDR Clearing Eligibility" type="Eligibility" assembly="Glossaries\InputData.xml" direction="In" />
   </Declaration>
   <Columns>
     <Condition name="RDR Clearing Eligibility" expression="RDR Clearing Eligibility" />
     <Condition name="Car Accident Liability" expression="Car Accident Liability" />
-    <Action name="RDR Car Accident Position" expression="Result" />
+    <Action name="RDR Car Accident Position" expression="RDR Car Accident Position" />
   </Columns>
   <Data>
     <Row>

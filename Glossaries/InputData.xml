@@ -86,4 +86,10 @@
     <Property name="Eligible" />
     <Property name="Not Eligible" />
   </Option>
+  <Option name="RDR Car Accident Positions">
+    <Property name="RDR - Shared Liability" />
+    <Property name="RDR - Insured Customer Liability" />
+    <Property name="RDR - Counterparty Liability" />
+    <Property name="No RDR Applicable" />
+  </Option>
 </Concept>

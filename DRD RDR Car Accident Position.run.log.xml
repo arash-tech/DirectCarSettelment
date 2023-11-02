@@ -8,10 +8,6 @@
     <Run providerType="JSONComposer" file=".RunTemplate\ee32f950-9df3-4be9-9409-88d5e13917df.js.json" />
     <Options input="1" target="0" logic="" />
   </Record>
-  <Record date="2023-11-02T00:41:59.4182709Z" file="DRD RDR Car Accident Position.xml" title="Testing List Type">
-    <Run providerType="JSONComposer" file=".RunTemplate\4de7f4a6-7827-42ac-b9b4-696594829dac.js.json" />
-    <Options input="1" target="0" logic="" />
-  </Record>
   <Record date="2023-11-02T04:34:46.0383105Z" file="DRD RDR Car Accident Position.xml" title="Allianz Benelux">
     <Run providerType="JSONComposer" file=".RunTemplate\2d3716ff-cb3c-4b00-8ee4-0599d19ee460.js.json" />
     <Options input="1" target="0" logic="" />

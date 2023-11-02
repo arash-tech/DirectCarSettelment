@@ -1,4 +1,4 @@
-<DecisionTable name="Car Accident Liability" processAll="True">
+<DecisionTable name="Car Accident Liability" processAll="False">
   <Declaration>
     <Define name="Circumstance Gravity Liability" direction="In" />
     <Define name="Insured Customer Number of Circumstances" direction="In" />
