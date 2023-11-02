@@ -2,9 +2,10 @@
   <Declaration>
     <Define name="Car Accident Liability" direction="In" />
     <Define name="Result" direction="Out" />
+    <Define name="RDR Clearing Eligibility" type="Eligibility" assembly="Glossaries\InputData.xml" direction="In" />
   </Declaration>
   <Columns>
-    <Condition name="RDR Clearing Eligibility" expression="Eligibility.RDRClearingEligibility" />
+    <Condition name="RDR Clearing Eligibility" expression="RDR Clearing Eligibility" />
     <Condition name="Car Accident Liability" expression="Car Accident Liability" />
     <Action name="RDR Car Accident Position" expression="Result" />
   </Columns>

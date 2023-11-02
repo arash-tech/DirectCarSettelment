@@ -114,6 +114,44 @@
       <Height>13.05417</Height>
     </Size>
   </NodeInfo>
+  <NodeInfo name="Counterparty Object" type="InputData">
+    <Label>
+      <Text>input</Text>
+      <Font>
+        <Name>Microsoft Sans Serif</Name>
+        <Style>Regular</Style>
+        <Size>9</Size>
+      </Font>
+      <Size>
+        <Width>20</Width>
+        <Height>10</Height>
+      </Size>
+      <Location>
+        <X>143.3604</X>
+        <Y>64.25</Y>
+      </Location>
+      <Alignment>
+        <Vertical>Center</Vertical>
+        <Horizontal>Center</Horizontal>
+      </Alignment>
+    </Label>
+    <Image></Image>
+    <ImageAlign>Center</ImageAlign>
+    <FillColorFrom>-2572328</FillColorFrom>
+    <FillColorTo>-2572328</FillColorTo>
+    <Border>
+      <Color>-16777216</Color>
+      <Width>0.3</Width>
+    </Border>
+    <Location>
+      <X>143.3604</X>
+      <Y>64.25</Y>
+    </Location>
+    <Size>
+      <Width>20</Width>
+      <Height>10</Height>
+    </Size>
+  </NodeInfo>
   <NodeInfo name="Transition197" type="Transition">
     <Label>
       <Text></Text>
@@ -214,44 +252,6 @@
       </End>
     </Points>
   </NodeInfo>
-  <NodeInfo name="Counterparty Object" type="InputData">
-    <Label>
-      <Text>input</Text>
-      <Font>
-        <Name>Microsoft Sans Serif</Name>
-        <Style>Regular</Style>
-        <Size>9</Size>
-      </Font>
-      <Size>
-        <Width>20</Width>
-        <Height>10</Height>
-      </Size>
-      <Location>
-        <X>143.3604</X>
-        <Y>64.25</Y>
-      </Location>
-      <Alignment>
-        <Vertical>Center</Vertical>
-        <Horizontal>Center</Horizontal>
-      </Alignment>
-    </Label>
-    <Image></Image>
-    <ImageAlign>Center</ImageAlign>
-    <FillColorFrom>-2572328</FillColorFrom>
-    <FillColorTo>-2572328</FillColorTo>
-    <Border>
-      <Color>-16777216</Color>
-      <Width>0.3</Width>
-    </Border>
-    <Location>
-      <X>143.3604</X>
-      <Y>64.25</Y>
-    </Location>
-    <Size>
-      <Width>20</Width>
-      <Height>10</Height>
-    </Size>
-  </NodeInfo>
   <NodeInfo name="Transition138" type="Transition">
     <Label>
       <Text></Text>
@@ -272,7 +272,7 @@
       <Y>68.95039</Y>
     </Location>
     <Size>
-      <Width>23.85426</Width>
+      <Width>23.85432</Width>
       <Height>0.6908264</Height>
     </Size>
     <Shape>Polyline</Shape>

@@ -16,11 +16,11 @@
     </Row>
     <Row>
       <Value>Extremely Inculpatory</Value>
-      <Value>! Extremely Inculpatory</Value>
+      <Value>not: Extremely Inculpatory</Value>
       <Value>Insured Customer Liability</Value>
     </Row>
     <Row>
-      <Value>! Extremely Inculpatory</Value>
+      <Value>not: Extremely Inculpatory</Value>
       <Value>Extremely Inculpatory</Value>
       <Value>Counterparty Liability</Value>
     </Row>
@@ -31,11 +31,11 @@
     </Row>
     <Row>
       <Value>Inculpatory</Value>
-      <Value>! Inculpatory</Value>
+      <Value>not: Inculpatory</Value>
       <Value>Insured Customer Liability</Value>
     </Row>
     <Row>
-      <Value>! Inculpatory</Value>
+      <Value>not: Inculpatory</Value>
       <Value>Inculpatory</Value>
       <Value>Counterparty Liability</Value>
     </Row>
@@ -46,11 +46,11 @@
     </Row>
     <Row>
       <Value>Protecting</Value>
-      <Value>! Protecting</Value>
+      <Value>not: Protecting</Value>
       <Value>Counterparty Liability</Value>
     </Row>
     <Row>
-      <Value>!Protecting or !Inculpatory or !Extremely Inculpatory</Value>
+      <Value>not: Protecting or Inculpatory or Extremely Inculpatory</Value>
       <Value>Protecting</Value>
       <Value>Insured Customer Liability</Value>
     </Row>

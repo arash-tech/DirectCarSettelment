@@ -1,15 +1,16 @@
 <DecisionTable name="Car Accident RDR Eligibility" processAll="False">
   <Declaration>
-    <Define name="Car Accident RDR Eligibility" direction="Out" />
+    <Define name="Car Accident RDR Eligibility" type="Eligibility" assembly="Glossaries\InputData.xml" direction="Out" />
+    <Define name="Car Accident" type="Car Accident" assembly="Glossaries\InputData.xml" direction="In" />
   </Declaration>
   <Glossary>
     <GlossarySource uri="Glossaries\BusinessTerms.xml" />
   </Glossary>
   <Columns>
-    <Condition name="Accident Country" expression="CarAccident.AccidentCountry" />
-    <Condition name="Accident Statement Mutual Agreement" expression="CarAccident.AccidentStatementMutualAgreement" />
-    <Condition name="Claim Type" expression="CarAccident.ClaimType" />
-    <Action name="Car Accident RDR Eligibility" term="Eligibility" variable="Car Accident RDR Eligibility" />
+    <Condition name="Accident Country" expression="Car Accident.Accident Country" />
+    <Condition name="Accident Statement Mutual Agreement" expression="Car Accident.Accident Statement Mutual Agreement" />
+    <Condition name="Claim Type" expression="Car Accident.Claim Type" />
+    <Action name="Car Accident RDR Eligibility" expression="Car Accident RDR Eligibility" />
   </Columns>
   <Data>
     <Row>

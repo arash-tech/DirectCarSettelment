@@ -2,13 +2,13 @@
     "CounterpartyAccidentCircumstancesInputData":
     {
         "Circumstances":
-        ["17 - had not observed a right of way sign"	
+        ["2 - leaving a parking place"
         ]
     },
     "InsuredCustomerAccidentCircumstancesInputData":
     {
         "Circumstances":
-        ["6 - entering a roundabout"	
+        ["3 - entering a parking place"
         ]
     },
     "Car Accident":
@@ -22,7 +22,7 @@
         "Vehicle Type":"Car",
         "Vehicle Insurance Obligation":true,
         "Vehicle Country of Registration":"Belgium",
-        "Vehicle Insurance Company":"AG Insurance",
+        "Vehicle Insurance Company":"Allianz Benelux",
         "Vehicle Insurance Status":"Insured"
     }
 }

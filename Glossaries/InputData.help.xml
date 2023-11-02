@@ -190,8 +190,8 @@
       <Width>0.3</Width>
     </Border>
     <Location>
-      <X>796.3776</X>
-      <Y>3.110121</Y>
+      <X>612.7568</X>
+      <Y>155.5101</Y>
     </Location>
     <Size>
       <Width>56.19373</Width>
@@ -265,12 +265,12 @@
       <Width>0.3</Width>
     </Border>
     <Location>
-      <X>610.3688</X>
-      <Y>88.17224</Y>
+      <X>608.713</X>
+      <Y>79.92361</Y>
     </Location>
     <Size>
-      <Width>54.07709</Width>
-      <Height>27.78124</Height>
+      <Width>80.55096</Width>
+      <Height>35.86575</Height>
     </Size>
     <Description></Description>
   </NodeInfo>
@@ -290,8 +290,8 @@
       <Width>0.3</Width>
     </Border>
     <Location>
-      <X>674.446</X>
-      <Y>87.06285</Y>
+      <X>713.5455</X>
+      <Y>83.82906</Y>
     </Location>
     <Size>
       <Width>30</Width>
@@ -299,7 +299,7 @@
     </Size>
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition43" type="Transition">
+  <NodeInfo name="Transition440" type="Transition">
     <Label>
       <Text>Gravity</Text>
       <Font>
@@ -351,7 +351,7 @@
     <Fact reference="Circumstance and Gravity.Gravity" to="Circumstance Gravities" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition44" type="Transition">
+  <NodeInfo name="Transition441" type="Transition">
     <Label>
       <Text>Circumstance and Gravity</Text>
       <Font>
@@ -403,7 +403,7 @@
     <Fact reference="Circumstances and Gravities List.Circumstance and Gravity" to="Circumstance and Gravity" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition45" type="Transition">
+  <NodeInfo name="Transition442" type="Transition">
     <Label>
       <Text>Vehicle Type</Text>
       <Font>
@@ -463,7 +463,7 @@
     <Fact reference="Object Input Data.Vehicle Type" to="Vehicle Type" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition46" type="Transition">
+  <NodeInfo name="Transition443" type="Transition">
     <Label>
       <Text>Vehicle Country of Registration</Text>
       <Font>
@@ -523,7 +523,7 @@
     <Fact reference="Object Input Data.Vehicle Country of Registration" to="Countries" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition47" type="Transition">
+  <NodeInfo name="Transition444" type="Transition">
     <Label>
       <Text>Vehicle Insurance Status</Text>
       <Font>
@@ -583,7 +583,7 @@
     <Fact reference="Object Input Data.Vehicle Insurance Status" to="Insurance Status" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition48" type="Transition">
+  <NodeInfo name="Transition445" type="Transition">
     <Label>
       <Text>Claim Type</Text>
       <Font>
@@ -599,12 +599,12 @@
       <Width>0.3</Width>
     </Border>
     <Location>
-      <X>664.1459</X>
-      <Y>106.6287</Y>
+      <X>688.9639</X>
+      <Y>99.71075</Y>
     </Location>
     <Size>
-      <Width>10.60004</Width>
-      <Height>3.843506</Height>
+      <Width>24.88159</Width>
+      <Height>2.512856</Height>
     </Size>
     <Shape>Polyline</Shape>
     <SegmentCount>1</SegmentCount>
@@ -616,26 +616,26 @@
     <Pen>0/#FF000000/0.3/0/0//0/0/10/</Pen>
     <Points>
       <Point>
-        <X>664.4459</X>
-        <Y>110.1722</Y>
+        <X>689.2639</X>
+        <Y>101.9236</Y>
       </Point>
       <Point>
-        <X>674.446</X>
-        <Y>106.9287</Y>
+        <X>713.5455</X>
+        <Y>100.0108</Y>
       </Point>
       <Start>
-        <X>664.4459</X>
-        <Y>110.1722</Y>
+        <X>689.2639</X>
+        <Y>101.9236</Y>
       </Start>
       <End>
-        <X>674.446</X>
-        <Y>106.9287</Y>
+        <X>713.5455</X>
+        <Y>100.0108</Y>
       </End>
     </Points>
     <Fact reference="Car Accident.Claim Type" to="Claim Type" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition49" type="Transition">
+  <NodeInfo name="Transition446" type="Transition">
     <Label>
       <Text>Circumstance</Text>
       <Font>
@@ -687,7 +687,7 @@
     <Fact reference="Circumstance and Gravity.Circumstance" to="Circumstances" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition50" type="Transition">
+  <NodeInfo name="Transition447" type="Transition">
     <Label>
       <Text>Circumstances</Text>
       <Font>
@@ -739,7 +739,7 @@
     <Fact reference="Circumstances List.Circumstances" to="Circumstances" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition51" type="Transition">
+  <NodeInfo name="Transition448" type="Transition">
     <Label>
       <Text>Accident Country</Text>
       <Font>
@@ -756,11 +756,11 @@
     </Border>
     <Location>
       <X>583.3883</X>
-      <Y>103.8722</Y>
+      <Y>95.6236</Y>
     </Location>
     <Size>
-      <Width>27.28046</Width>
-      <Height>1.973503</Height>
+      <Width>25.62463</Width>
+      <Height>6.634361</Height>
     </Size>
     <Shape>Polyline</Shape>
     <SegmentCount>1</SegmentCount>
@@ -772,23 +772,48 @@
     <Pen>0/#FF000000/0.3/0/0//0/0/10/</Pen>
     <Points>
       <Point>
-        <X>610.3688</X>
-        <Y>104.1722</Y>
+        <X>608.713</X>
+        <Y>95.92361</Y>
       </Point>
       <Point>
         <X>583.6883</X>
-        <Y>105.5457</Y>
+        <Y>101.958</Y>
       </Point>
       <Start>
-        <X>610.3688</X>
-        <Y>104.1722</Y>
+        <X>608.713</X>
+        <Y>95.92361</Y>
       </Start>
       <End>
         <X>583.6883</X>
-        <Y>105.5457</Y>
+        <Y>101.958</Y>
       </End>
     </Points>
     <Fact reference="Car Accident.Accident Country" to="Countries" />
+    <Description></Description>
+  </NodeInfo>
+  <NodeInfo name="Eligibility" type="Option">
+    <Label>
+      <Text>Eligibility</Text>
+      <Font>
+        <Name>Microsoft Sans Serif</Name>
+        <Style>Regular</Style>
+        <Size>9</Size>
+      </Font>
+    </Label>
+    <FillColorFrom>-329006</FillColorFrom>
+    <FillColorTo>-329006</FillColorTo>
+    <Border>
+      <Color>-16777216</Color>
+      <Width>0.3</Width>
+    </Border>
+    <Location>
+      <X>736.4791</X>
+      <Y>140.4104</Y>
+    </Location>
+    <Size>
+      <Width>40.58331</Width>
+      <Height>25.66458</Height>
+    </Size>
     <Description></Description>
   </NodeInfo>
 </Nodes>

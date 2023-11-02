@@ -78,50 +78,13 @@
           </lines>
           <bounds x="1" y="0" width="1" height="1" />
           <style t="2">
+            <height>14.25pt</height>
             <hidden>0</hidden>
             <outlineLevel>1</outlineLevel>
             <conditionalFormats />
             <fontSize>8</fontSize>
             <fontItalic>1</fontItalic>
             <halign>2</halign>
-          </style>
-        </region>
-        <region>
-          <lines>
-            <l ymin="0" ymax="1">
-              <segments>
-                <s p="3" s="1" />
-                <s p="4" s="0" />
-              </segments>
-            </l>
-          </lines>
-          <bounds x="3" y="0" width="1" height="1" />
-          <style t="2">
-            <height>14.25pt</height>
-            <conditionalFormats />
-            <fontName>Segoe UI</fontName>
-            <fontSize>9</fontSize>
-            <indent>2px</indent>
-          </style>
-        </region>
-        <region>
-          <lines>
-            <l ymin="0" ymax="1">
-              <segments>
-                <s p="4" s="1" />
-                <s p="5" s="0" />
-                <s p="5" s="1" />
-                <s p="6" s="0" />
-              </segments>
-            </l>
-          </lines>
-          <bounds x="4" y="0" width="2" height="1" />
-          <style t="2">
-            <height>14.25pt</height>
-            <conditionalFormats />
-            <fontName>Segoe UI</fontName>
-            <fontSize>9</fontSize>
-            <indent>2px</indent>
           </style>
         </region>
         <region>
@@ -154,6 +117,7 @@
           </lines>
           <bounds x="2" y="0" width="1" height="1" />
           <style t="2">
+            <height>14.25pt</height>
             <hidden>0</hidden>
             <outlineLevel>1</outlineLevel>
             <conditionalFormats />
@@ -271,46 +235,46 @@
         </row>
         <row r="2" title="" pageBreak="0" collapsed="0">
           <c c="0">
+            <v t="23">1</v>
+          </c>
+          <c c="1">
+            <v t="23">2</v>
+          </c>
+          <c c="2">
+            <v t="23">3</v>
+          </c>
+        </row>
+        <row r="3" title="1" pageBreak="0" collapsed="0">
+          <c c="0">
             <v t="23">6</v>
+          </c>
+          <c c="1">
+            <v t="23">6</v>
+          </c>
+          <c c="2">
+            <v t="23">6</v>
+          </c>
+        </row>
+        <row r="4" title="2" pageBreak="0" collapsed="0">
+          <c c="0">
+            <v t="23">7</v>
+          </c>
+          <c c="1">
+            <v t="23">8</v>
+          </c>
+          <c c="2">
+            <v t="23">7</v>
+          </c>
+        </row>
+        <row r="5" title="3" pageBreak="0" collapsed="0">
+          <c c="0">
+            <v t="23">8</v>
           </c>
           <c c="1">
             <v t="23">7</v>
           </c>
           <c c="2">
-            <v t="23">8</v>
-          </c>
-        </row>
-        <row r="3" title="1" pageBreak="0" collapsed="0">
-          <c c="0">
-            <v t="23">9</v>
-          </c>
-          <c c="1">
-            <v t="23">9</v>
-          </c>
-          <c c="2">
-            <v t="23">9</v>
-          </c>
-        </row>
-        <row r="4" title="2" pageBreak="0" collapsed="0">
-          <c c="0">
-            <v t="23">10</v>
-          </c>
-          <c c="1">
-            <v t="23">11</v>
-          </c>
-          <c c="2">
-            <v t="23">10</v>
-          </c>
-        </row>
-        <row r="5" title="3" pageBreak="0" collapsed="0">
-          <c c="0">
-            <v t="23">11</v>
-          </c>
-          <c c="1">
-            <v t="23">10</v>
-          </c>
-          <c c="2">
-            <v t="23">11</v>
+            <v t="23">7</v>
           </c>
         </row>
       </data>

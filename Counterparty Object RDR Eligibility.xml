@@ -1,6 +1,7 @@
 <DRD name="Counterparty Object RDR Eligibility">
   <Declaration>
     <Define name="Counterparty Insurance RDR Affiliated" type="bool" direction="Out" />
+    <Define name="Counterparty Object RDR Eligibility" type="Eligibility" assembly="Glossaries\InputData.xml" direction="Out" />
   </Declaration>
   <Glossary>
     <GlossarySource uri="Glossaries\BoxedExpressions.xml" />

@@ -1,6 +1,5 @@
 <DRD name="RDR Car Accident Position">
   <Declaration>
-    <Define name="Eligibility" type="Eligibility" assembly="Glossaries\Concept.xml" direction="Local" />
     <Define name="Insured Customer Accident Circumstances" type="Circumstances and Gravities List" assembly="Glossaries\InputData.xml" direction="Local" value="[]" />
     <Define name="RDR Affiliated Companies" type="Company List" assembly="Glossaries\InputData.xml" direction="Out" />
     <Define name="Counterparty Accident Circumstances" type="Circumstances and Gravities List" assembly="Glossaries\InputData.xml" direction="Local" value="[]" />
@@ -13,7 +12,7 @@
     <Decision name="_8F5B61D9-C3C9-4372-8F18-5E49795DAEAE" uri="RDR Clearing Eligibility.xml" contextMode="Shared">
       <Transition name="Transition2" to="_96230F7D-186C-42CE-8D97-3443F8E54627" relationType="Information" />
     </Decision>
-    <KnowledgeSource name="_7D45A0FD-C8C4-40DB-850C-464F0CB8AD2A">
+    <KnowledgeSource name="_7D45A0FD-C8C4-40DB-850C-464F0CB8AD2A" metadataTemplate="Knowledge Source">
       <Transition name="Transition4" to="_96230F7D-186C-42CE-8D97-3443F8E54627" relationType="Authority" />
     </KnowledgeSource>
     <Decision name="_EB850E2F-612B-404F-801E-8AE76D5D8643" expression="InsuredCustomerAccidentCircumstancesInputData.Circumstances&#xD;&#xA;         |select(circumstance, &#xD;&#xA;                     Insured Customer Accident Circumstances|add( Circumstances Enrichment(circumstance))&#xD;&#xA;                )&#xD;&#xA;                    &#xD;&#xA;                    &#xD;&#xA; /* for circumstance in Insured Customer Accident Circumstances Input Data return Circumstances Enrichment(circumstance)*/">
@@ -39,19 +38,19 @@
     <Decision name="_00F10BC6-11E2-4C72-B6C1-D57CF7D145F0" uri="Car Accident RDR Eligibility.xml" contextMode="Shared">
       <Transition name="Transition12" to="_8F5B61D9-C3C9-4372-8F18-5E49795DAEAE" relationType="Information" />
     </Decision>
-    <InputData name="CarAccident" type="Car Accident" assembly="Glossaries\InputData.xml">
+    <InputData name="Car Accident" type="Car Accident" assembly="Glossaries\InputData.xml">
       <Transition name="Transition13" to="_00F10BC6-11E2-4C72-B6C1-D57CF7D145F0" relationType="Information" />
     </InputData>
     <InputData name="Counterparty Object" type="Object Input Data" assembly="Glossaries\InputData.xml">
       <Transition name="Transition211" to="SubDrd209" relationType="Information" />
     </InputData>
-    <KnowledgeSource name="_CBE4D364-0424-400F-A022-11769BD647F5">
+    <KnowledgeSource name="_CBE4D364-0424-400F-A022-11769BD647F5" metadataTemplate="Knowledge Source">
       <Transition name="Transition170" to="BusinessKnowledge168" relationType="Authority" />
     </KnowledgeSource>
     <SubDrd name="SubDrd50" uri="DecisionGraph.xml" contextMode="Shared">
       <Transition name="Transition51" to="_96230F7D-186C-42CE-8D97-3443F8E54627" relationType="Information" />
     </SubDrd>
-    <BusinessKnowledge name="BusinessKnowledge168" expression="RDR Affiliated Companies= RDR_Affiliated_Companies">
+    <BusinessKnowledge name="BusinessKnowledge168" expression="RDR Affiliated Companies= Company List">
       <Transition name="Transition212" to="SubDrd209" relationType="Knowledge" />
     </BusinessKnowledge>
     <SubDrd name="SubDrd209" uri="Counterparty Object RDR Eligibility.xml" contextMode="Shared">

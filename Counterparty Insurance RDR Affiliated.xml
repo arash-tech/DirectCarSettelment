@@ -1,12 +1,13 @@
 <DecisionTable name="Counterparty Insurance RDR Affiliated" processAll="False">
   <Declaration>
     <Define name="Counterparty Insurance RDR Affiliated" type="bool" direction="Local" />
+    <Define name="RDR Affiliated Companies" direction="In" />
   </Declaration>
   <Glossary>
     <GlossarySource uri="Glossaries\BoxedExpressions.xml" />
   </Glossary>
   <Columns>
-    <Condition name="Is Counterparty Insurance, RDR Affiliated Company?" expression="RDR_Affiliated_Companies.Company|contains (Counterparty Object.Vehicle Insurance Company)" />
+    <Condition name="Is Counterparty Insurance, RDR Affiliated Company?" expression="RDR Affiliated Companies.Company|contains (Counterparty Object.Vehicle Insurance Company)" />
     <Action name="Counterparty Insurance RDR Affiliated?" expression="Counterparty Insurance RDR Affiliated" />
   </Columns>
   <Data>

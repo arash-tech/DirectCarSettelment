@@ -1,6 +1,6 @@
 <DecisionTable name="CounterpartyObjectRDREligibility" processAll="True">
   <Declaration>
-    <Define name="Counterparty Object RDR Eligibility" direction="Out" />
+    <Define name="Counterparty Object RDR Eligibility" type="Eligibility" assembly="Glossaries\InputData.xml" direction="Out" />
     <Define name="Counterparty Insurance RDR Affiliated" type="bool" direction="In" />
     <Define name="Motor Vehicle" type="bool" direction="In" />
   </Declaration>
@@ -14,7 +14,7 @@
     <Condition name="Counterparty Vehicle Insurance Obligation" expression="Counterparty Object.Vehicle Insurance Obligation" />
     <Condition name="Counterparty Vehicle Insurance Status" expression="Counterparty Object.Vehicle Insurance Status" />
     <Condition name="Counterparty Insurance RDR Affiliated" expression="Counterparty Insurance RDR Affiliated" />
-    <Action name="Counerparty Object RDR Eligibility" term="Eligibility" variable="Counterparty Object RDR Eligibility" />
+    <Action name="Counerparty Object RDR Eligibility" expression="Counterparty Object RDR Eligibility" />
   </Columns>
   <Data>
     <Row>

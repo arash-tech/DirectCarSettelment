@@ -113,6 +113,7 @@
       <Width>20.67293</Width>
       <Height>14.75104</Height>
     </Size>
+    <Description>"https://www.assuralia.be/nl/26-sectorinfo/conventies/189-conventie-rdr-en-expertise"</Description>
   </NodeInfo>
   <NodeInfo name="_EB850E2F-612B-404F-801E-8AE76D5D8643" type="Decision">
     <Label>
@@ -304,7 +305,7 @@
       <Height>12.96458</Height>
     </Size>
   </NodeInfo>
-  <NodeInfo name="CarAccident" type="InputData">
+  <NodeInfo name="Car Accident" type="InputData">
     <Label>
       <Text>Car Accident</Text>
       <Font>
@@ -504,7 +505,7 @@
       </Font>
       <Size>
         <Width>20</Width>
-        <Height>10</Height>
+        <Height>11.99585</Height>
       </Size>
       <Location>
         <X>71.3604</X>

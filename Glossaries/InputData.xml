@@ -82,4 +82,8 @@
     <Property name="Other" />
     <Property name="Collision" />
   </Option>
+  <Option name="Eligibility">
+    <Property name="Eligible" />
+    <Property name="Not Eligible" />
+  </Option>
 </Concept>
