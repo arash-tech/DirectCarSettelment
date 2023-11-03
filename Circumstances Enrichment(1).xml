@@ -1,17 +1,17 @@
 <DecisionTable name="Circumstances Enrichment" processAll="True">
   <Declaration>
     <Define name="Circumstances Enrichment" type="Circumstance and Gravity" assembly="Glossaries\InputData.xml" direction="Out" />
-    <Define name="circumstance" direction="In" />
+    <Define name="Input Circumstance" type="Circumstances" assembly="Glossaries\InputData.xml" direction="In" />
   </Declaration>
   <Columns>
-    <Condition name="Input Circumstance" expression="circumstance |in($value)" />
+    <Condition name="Input Circumstance" expression="Input Circumstance |in($value)" />
     <Action name="Circumstance" expression="Circumstances Enrichment.Circumstance" />
     <Action name="Gravity" expression="Circumstances Enrichment.Gravity&amp;#13;&amp;#10;/*Circumstance Gravities*/" />
   </Columns>
   <Data>
     <Row>
       <Value>"1 - parked/stopped", "7 - circulating a roundabout"</Value>
-      <Value>:circumstance</Value>
+      <Value>:Input Circumstance</Value>
       <Value>"Protecting"</Value>
     </Row>
     <Row>
@@ -20,19 +20,19 @@
 "10 - changing lanes", "11 - overtaking", "12 - turning to the right", "13 - turning to the left",
 "15 - encroaching on a lane reserved for circulation in the opposite direction",
 "16 - coming from the right at road junctions", "17 - had not observed a right of way sign"</Value>
-      <Value>:circumstance</Value>
+      <Value>:Input Circumstance</Value>
       <Value>"Neutral"</Value>
     </Row>
     <Row>
       <Value>"2 - leaving a parking place", "2bis - opening the door",
 "4 - emerging from a car park, from private ground, from a track",
 "14 - reversing"</Value>
-      <Value>:circumstance</Value>
+      <Value>:Input Circumstance</Value>
       <Value>"Inculpatory"</Value>
     </Row>
     <Row>
       <Value>"17bis - had not observed a red light"</Value>
-      <Value>:circumstance</Value>
+      <Value>:Input Circumstance</Value>
       <Value>"Extremely Inculpatory"</Value>
     </Row>
   </Data>

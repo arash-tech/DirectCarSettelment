@@ -220,13 +220,7 @@
         </region>
         <region>
           <lines>
-            <l ymin="0" ymax="2">
-              <segments>
-                <s p="1" s="1" />
-                <s p="3" s="0" />
-              </segments>
-            </l>
-            <l ymin="2" ymax="3">
+            <l ymin="0" ymax="3">
               <segments>
                 <s p="1" s="1" />
                 <s p="2" s="0" />
