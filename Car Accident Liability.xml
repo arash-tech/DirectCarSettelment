@@ -5,7 +5,7 @@
     <Define name="Counterparty Accident Circumstance" direction="In" />
     <Define name="Insured Customer Accident Circumstance" direction="In" />
     <Define name="Counterparty Number of Circumstances" direction="In" />
-    <Define name="Car Accident Liability" direction="Out" />
+    <Define name="Car Accident Liability" type="Liabilities" assembly="Glossaries\InputData.xml" direction="Out" />
   </Declaration>
   <Columns>
     <Condition name="Circumstance Gravity Liability" expression="Circumstance Gravity Liability" />

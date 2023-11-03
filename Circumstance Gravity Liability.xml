@@ -1,11 +1,12 @@
 <DecisionTable name="Circumstance Gravity Liability" processAll="False">
   <Declaration>
-    <Define name="Circumstance Gravities" type="Circumstance Gravities" assembly="Glossaries\Concept.xml" direction="In" />
-    <Define name="Circumstance Gravity Liability" direction="Out" />
+    <Define name="Counterparty Highest Circumstance Gravity" type="Circumstance Gravities" assembly="Glossaries\InputData.xml" direction="In" />
+    <Define name="Circumstance Gravity Liability" type="Liabilities" assembly="Glossaries\InputData.xml" direction="Out" />
+    <Define name="Insured Customer Highest Circumstance Gravity" type="Circumstance Gravities" assembly="Glossaries\InputData.xml" direction="In" />
   </Declaration>
   <Columns>
-    <Condition name="Insured Customer Highest Circumstance Gravity" expression="Circumstance Gravities.Insured Customer Highest Circumstance Gravity" />
-    <Condition name="Counterparty Highest Circumstance Gravity" expression="Circumstance Gravities.Counterparty Highest Circumstance Gravity" />
+    <Condition name="Insured Customer Highest Circumstance Gravity" expression="Insured Customer Highest Circumstance Gravity" />
+    <Condition name="Counterparty Highest Circumstance Gravity" expression="Counterparty Highest Circumstance Gravity" />
     <Action name="Circumstance Gravity Liability" expression="Circumstance Gravity Liability" />
   </Columns>
   <Data>

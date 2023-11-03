@@ -19,14 +19,6 @@
       <Transition name="Transition52" to="SubDrd50" relationType="Information" />
     </Decision>
     <Decision name="_579AF99C-CD42-4E8C-9E3A-B25528B8D2A1" expression="CounterpartyAccidentCircumstancesInputData.Circumstances&#xD;&#xA;       |select(circumstance, &#xD;&#xA;               Counterparty Accident Circumstances|add(Circumstances Enrichment(circumstance))&#xD;&#xA;               )&#xD;&#xA;              &#xD;&#xA; /* for circumstance in Counterparty Accident Circumstances Input Data return Circumstances Enrichment(circumstance) */">
-      <Events>
-        <Handler event="Before">
-          <MultiExpression>
-            <Var value="Insured Customer Accident Circumstances = []" />
-            <Var value="Counterparty Accident Circumstances=[]" />
-          </MultiExpression>
-        </Handler>
-      </Events>
       <Transition name="Transition53" to="SubDrd50" relationType="Information" />
     </Decision>
     <InputData name="CounterpartyAccidentCircumstancesInputData" type="Circumstances List" assembly="Glossaries\InputData.xml">

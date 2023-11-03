@@ -92,4 +92,10 @@
     <Property name="RDR - Counterparty Liability" />
     <Property name="No RDR Applicable" />
   </Option>
+  <Option name="Liabilities">
+    <Property name="Liability Cannot Be Determined" />
+    <Property name="Insured Customer Liability" />
+    <Property name="Counterparty Liability" />
+    <Property name="Shared Liability" />
+  </Option>
 </Concept>

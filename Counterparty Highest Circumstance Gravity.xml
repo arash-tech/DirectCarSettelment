@@ -1,13 +1,13 @@
 <DecisionTable name="Counterparty Highest Circumstance Gravity">
   <Declaration>
-    <Define name="Circumstance Gravities" type="Circumstance Gravities" assembly="Glossaries\Concept.xml" direction="Out" />
-    <Define name="Counterparty Accident Circumstances" type="Counterparty Accident Circumstances" assembly="Glossaries\Concept.xml" direction="In" />
+    <Define name="Counterparty Highest Circumstance Gravity" type="Circumstance Gravities" assembly="Glossaries\InputData.xml" direction="Out" />
+    <Define name="Counterparty Accident Circumstances" type="Circumstances and Gravities List" assembly="Glossaries\InputData.xml" direction="In" />
   </Declaration>
   <Columns>
-    <Condition name="Counterparty Accident Circumstances.Gravity is &quot;Extremely Inculpatory&quot;" expression="Counterparty Accident Circumstances|any(x,x.Gravity==&quot;Extremely Inculpatory&quot;)&amp;#13;&amp;#10;/* list contains(Counterparty Accident Circumstances.Gravity,&quot;Extremely Inculpatory&quot;)*/" />
-    <Condition name="Counterparty Accident Circumstances.Gravity contains &quot;Inculpatory&quot;" expression="Counterparty Accident Circumstances|any(x,x.Gravity==&quot;Inculpatory&quot;)&amp;#13;&amp;#10;/* list contains(Counterparty Accident Circumstances.Gravity,&quot;Inculpatory&quot;)*/" />
-    <Condition name="Counterparty Accident Circumstances.Gravity contains &quot;Protecting&quot;" expression="Counterparty Accident Circumstances|any(x,x.Gravity==&quot;Protecting&quot;)&amp;#13;&amp;#10;/* list contains(Counterparty Accident Circumstances.Gravity,&quot;Protecting&quot;) */" />
-    <Action name="Counterparty Highest Circumstance Gravity" expression="Circumstance Gravities.Counterparty Highest Circumstance Gravity" />
+    <Condition name="Counterparty Accident Circumstances.Gravity is &quot;Extremely Inculpatory&quot;" expression="Counterparty Accident Circumstances.Gravity|contains(&quot;Extremely Inculpatory&quot;)&amp;#13;&amp;#10;/* list contains(Counterparty Accident Circumstances.Gravity,&quot;Extremely Inculpatory&quot;)*/" />
+    <Condition name="Counterparty Accident Circumstances.Gravity contains &quot;Inculpatory&quot;" expression="Counterparty Accident Circumstances.Gravity|contains(&quot;Inculpatory&quot;)&amp;#13;&amp;#10;/* list contains(Counterparty Accident Circumstances.Gravity,&quot;Inculpatory&quot;)*/" />
+    <Condition name="Counterparty Accident Circumstances.Gravity contains &quot;Protecting&quot;" expression="Counterparty Accident Circumstances.Gravity|contains(&quot;Protecting&quot;)&amp;#13;&amp;#10;/* list contains(Counterparty Accident Circumstances.Gravity,&quot;Protecting&quot;) */" />
+    <Action name="Counterparty Highest Circumstance Gravity" expression="Counterparty Highest Circumstance Gravity" />
   </Columns>
   <Data>
     <Row>

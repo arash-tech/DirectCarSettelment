@@ -324,7 +324,32 @@
     </Size>
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition48" type="Transition">
+  <NodeInfo name="RDR Car Accident Positions" type="Option">
+    <Label>
+      <Text>RDR Car Accident Positions</Text>
+      <Font>
+        <Name>Microsoft Sans Serif</Name>
+        <Style>Regular</Style>
+        <Size>9</Size>
+      </Font>
+    </Label>
+    <FillColorFrom>-329006</FillColorFrom>
+    <FillColorTo>-329006</FillColorTo>
+    <Border>
+      <Color>-16777216</Color>
+      <Width>0.3</Width>
+    </Border>
+    <Location>
+      <X>417.0764</X>
+      <Y>133.8866</Y>
+    </Location>
+    <Size>
+      <Width>71.27545</Width>
+      <Height>35.6875</Height>
+    </Size>
+    <Description></Description>
+  </NodeInfo>
+  <NodeInfo name="Transition107" type="Transition">
     <Label>
       <Text>Gravity</Text>
       <Font>
@@ -376,7 +401,7 @@
     <Fact reference="Circumstance and Gravity.Gravity" to="Circumstance Gravities" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition49" type="Transition">
+  <NodeInfo name="Transition108" type="Transition">
     <Label>
       <Text>Circumstance and Gravity</Text>
       <Font>
@@ -428,7 +453,7 @@
     <Fact reference="Circumstances and Gravities List.Circumstance and Gravity" to="Circumstance and Gravity" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition50" type="Transition">
+  <NodeInfo name="Transition109" type="Transition">
     <Label>
       <Text>Vehicle Type</Text>
       <Font>
@@ -488,7 +513,7 @@
     <Fact reference="Object Input Data.Vehicle Type" to="Vehicle Type" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition51" type="Transition">
+  <NodeInfo name="Transition110" type="Transition">
     <Label>
       <Text>Vehicle Country of Registration</Text>
       <Font>
@@ -548,7 +573,7 @@
     <Fact reference="Object Input Data.Vehicle Country of Registration" to="Countries" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition52" type="Transition">
+  <NodeInfo name="Transition111" type="Transition">
     <Label>
       <Text>Vehicle Insurance Status</Text>
       <Font>
@@ -608,7 +633,7 @@
     <Fact reference="Object Input Data.Vehicle Insurance Status" to="Insurance Status" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition53" type="Transition">
+  <NodeInfo name="Transition112" type="Transition">
     <Label>
       <Text>Claim Type</Text>
       <Font>
@@ -660,7 +685,7 @@
     <Fact reference="Car Accident.Claim Type" to="Claim Type" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition54" type="Transition">
+  <NodeInfo name="Transition113" type="Transition">
     <Label>
       <Text>Circumstance</Text>
       <Font>
@@ -712,7 +737,7 @@
     <Fact reference="Circumstance and Gravity.Circumstance" to="Circumstances" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition55" type="Transition">
+  <NodeInfo name="Transition114" type="Transition">
     <Label>
       <Text>Circumstances</Text>
       <Font>
@@ -764,7 +789,7 @@
     <Fact reference="Circumstances List.Circumstances" to="Circumstances" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition56" type="Transition">
+  <NodeInfo name="Transition115" type="Transition">
     <Label>
       <Text>Accident Country</Text>
       <Font>
@@ -816,9 +841,9 @@
     <Fact reference="Car Accident.Accident Country" to="Countries" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="RDR Car Accident Positions" type="Option">
+  <NodeInfo name="Liabilities" type="Option">
     <Label>
-      <Text>RDR Car Accident Positions</Text>
+      <Text>Liabilities</Text>
       <Font>
         <Name>Microsoft Sans Serif</Name>
         <Style>Regular</Style>
@@ -832,12 +857,12 @@
       <Width>0.3</Width>
     </Border>
     <Location>
-      <X>417.0764</X>
-      <Y>133.8866</Y>
+      <X>25.80833</X>
+      <Y>19.04583</Y>
     </Location>
     <Size>
-      <Width>71.27545</Width>
-      <Height>35.6875</Height>
+      <Width>65.35208</Width>
+      <Height>36.24791</Height>
     </Size>
     <Description></Description>
   </NodeInfo>
