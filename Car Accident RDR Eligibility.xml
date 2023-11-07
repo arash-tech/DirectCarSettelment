@@ -3,9 +3,6 @@
     <Define name="Car Accident RDR Eligibility" type="Eligibility" assembly="Glossaries\InputData.xml" direction="Out" />
     <Define name="Car Accident" type="Car Accident" assembly="Glossaries\InputData.xml" direction="In" />
   </Declaration>
-  <Glossary>
-    <GlossarySource uri="Glossaries\BusinessTerms.xml" />
-  </Glossary>
   <Columns>
     <Condition name="Accident Country" expression="Car Accident.Accident Country" />
     <Condition name="Accident Statement Mutual Agreement" expression="Car Accident.Accident Statement Mutual Agreement" />

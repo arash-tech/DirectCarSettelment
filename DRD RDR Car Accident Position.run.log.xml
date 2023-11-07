@@ -16,4 +16,8 @@
     <Run providerType="JSONComposer" file=".RunTemplate\aaa07676-6827-4741-a554-1748ac93556c.js.json" />
     <Options input="1" target="0" logic="" />
   </Record>
+  <Record date="2023-11-07T22:58:20.7876353Z" file="DRD RDR Car Accident Position.xml" title="Test 2 Circumstances">
+    <Run providerType="JSONComposer" file=".RunTemplate\05a01b32-1eaa-4edf-9344-69a02dfe2884.js.json" />
+    <Options input="1" target="0" logic="" />
+  </Record>
 </ExecTemplate>

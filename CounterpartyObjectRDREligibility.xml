@@ -5,7 +5,6 @@
     <Define name="Motor Vehicle" type="bool" direction="In" />
   </Declaration>
   <Glossary>
-    <GlossarySource uri="Glossaries\BusinessTerms.xml" />
     <GlossarySource uri="Glossaries\BoxedExpressions.xml" />
   </Glossary>
   <Columns>
