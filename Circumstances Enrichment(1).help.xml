@@ -91,44 +91,6 @@
           <lines>
             <l ymin="0" ymax="1">
               <segments>
-                <s p="3" s="1" />
-                <s p="4" s="0" />
-              </segments>
-            </l>
-          </lines>
-          <bounds x="3" y="0" width="1" height="1" />
-          <style t="2">
-            <height>14.25pt</height>
-            <conditionalFormats />
-            <fontName>Segoe UI</fontName>
-            <fontSize>9</fontSize>
-            <indent>2px</indent>
-          </style>
-        </region>
-        <region>
-          <lines>
-            <l ymin="0" ymax="1">
-              <segments>
-                <s p="4" s="1" />
-                <s p="6" s="0" />
-                <s p="6" s="1" />
-                <s p="7" s="0" />
-              </segments>
-            </l>
-          </lines>
-          <bounds x="4" y="0" width="3" height="1" />
-          <style t="2">
-            <height>14.25pt</height>
-            <conditionalFormats />
-            <fontName>Segoe UI</fontName>
-            <fontSize>9</fontSize>
-            <indent>2px</indent>
-          </style>
-        </region>
-        <region>
-          <lines>
-            <l ymin="0" ymax="1">
-              <segments>
                 <s p="0" s="1" />
                 <s p="1" s="0" />
               </segments>
@@ -182,22 +144,37 @@
       <styles>
         <region>
           <lines>
-            <l ymin="3" ymax="6">
+            <l ymin="3" ymax="4">
               <segments>
                 <s p="0" s="1" />
                 <s p="3" s="0" />
               </segments>
             </l>
-            <l ymin="6" ymax="7">
+            <l ymin="4" ymax="7">
               <segments>
                 <s p="0" s="1" />
-                <s p="2" s="0" />
+                <s p="1" s="0" />
                 <s p="2" s="1" />
                 <s p="3" s="0" />
               </segments>
             </l>
           </lines>
           <bounds x="0" y="3" width="3" height="4" />
+          <style t="0">
+            <conditionalFormats />
+            <halign>1</halign>
+          </style>
+        </region>
+        <region>
+          <lines>
+            <l ymin="5" ymax="6">
+              <segments>
+                <s p="1" s="1" />
+                <s p="2" s="0" />
+              </segments>
+            </l>
+          </lines>
+          <bounds x="1" y="5" width="1" height="1" />
           <style t="0">
             <conditionalFormats />
             <halign>1</halign>
@@ -220,7 +197,13 @@
         </region>
         <region>
           <lines>
-            <l ymin="0" ymax="3">
+            <l ymin="0" ymax="2">
+              <segments>
+                <s p="1" s="1" />
+                <s p="3" s="0" />
+              </segments>
+            </l>
+            <l ymin="2" ymax="3">
               <segments>
                 <s p="1" s="1" />
                 <s p="2" s="0" />
@@ -233,6 +216,36 @@
           <style t="0">
             <conditionalFormats />
             <background id="1" />
+          </style>
+        </region>
+        <region>
+          <lines>
+            <l ymin="4" ymax="5">
+              <segments>
+                <s p="1" s="1" />
+                <s p="2" s="0" />
+              </segments>
+            </l>
+          </lines>
+          <bounds x="1" y="4" width="1" height="1" />
+          <style t="0">
+            <conditionalFormats />
+            <halign>1</halign>
+          </style>
+        </region>
+        <region>
+          <lines>
+            <l ymin="6" ymax="7">
+              <segments>
+                <s p="1" s="1" />
+                <s p="2" s="0" />
+              </segments>
+            </l>
+          </lines>
+          <bounds x="1" y="6" width="1" height="1" />
+          <style t="0">
+            <conditionalFormats />
+            <halign>1</halign>
           </style>
         </region>
       </styles>

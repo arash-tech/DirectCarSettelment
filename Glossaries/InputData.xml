@@ -1,5 +1,5 @@
 <Concept namespace="D3826a222Eea4E5b9390090Ab871b1c0.Js">
-  <Option name="Circumstance Gravities">
+  <Option name="Circumstance_Gravities">
     <Property name="Extremely Inculpatory" />
     <Property name="Protecting" />
     <Property name="Neutral" />
@@ -52,12 +52,12 @@
   <Fact name="Circumstances List">
     <Property name="Circumstances" fact="Circumstances" isArray="True" />
   </Fact>
-  <Fact name="Circumstance and Gravity">
+  <Fact name="Circumstance_and_Gravity">
     <Property name="Circumstance" fact="Circumstances" />
-    <Property name="Gravity" fact="Circumstance Gravities" />
+    <Property name="Gravity" fact="Circumstance_Gravities" />
   </Fact>
-  <Fact name="Circumstances and Gravities List">
-    <Property name="Circumstance and Gravity" fact="Circumstance and Gravity" isArray="True" />
+  <Fact name="Circumstances_and_Gravities_List">
+    <Property name="Circumstance and Gravity" fact="Circumstance_and_Gravity" isArray="True" />
   </Fact>
   <Fact name="Company List">
     <Property name="Company" type="string" isArray="True" />

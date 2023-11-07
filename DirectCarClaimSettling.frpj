@@ -32,6 +32,9 @@
       <Add assembly="FlexRule.Designer.FactConcepts.dll" type="FlexRule.Designer.FactConcepts.ConceptDiagramBuilderStrategy" description="" />
       <Add assembly="FlexRule.Designer.FlowEngine.dll" type="FlexRule.Designer.RuleFlow.DirectoryService.DirectoryServiceBuilderStrategy" description="" />
       <Add assembly="FlexRule.Designer.DataAnalytics.dll" type="FlexRule.Designer.DataAnalytics.BookletElementItemBuilderStrategy" description="" />
+      <Add assembly="FlexRule.Designer.Glossaries.dll" type="FlexRule.Designer.Glossaries.Terms.ElementItemBuilderBuiltinElementStrategy" description="" />
+      <Add assembly="FlexRule.Designer.Glossaries.dll" type="FlexRule.Designer.Glossaries.Formulas.FormulasBuilderStrategy" description="" />
+      <Add assembly="FlexRule.Designer.DMN.dll" type="FlexRule.Designer.DMN.BoxedExpressionBuilderElementStrategy" description="" />
     </Builders>
   </ProjectProviders>
   <Toolbox>

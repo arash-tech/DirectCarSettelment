@@ -15,10 +15,10 @@
     <KnowledgeSource name="_7D45A0FD-C8C4-40DB-850C-464F0CB8AD2A">
       <Transition name="Transition4" to="_96230F7D-186C-42CE-8D97-3443F8E54627" relationType="Authority" />
     </KnowledgeSource>
-    <Decision name="_EB850E2F-612B-404F-801E-8AE76D5D8643" expression="InsuredCustomerAccidentCircumstancesInputData&#xD;&#xA;         |select(circumstance, &#xD;&#xA;                     Insured Customer Accident Circumstances|add( Circumstances Enrichment(circumstance))&#xD;&#xA;                )&#xD;&#xA;                    &#xD;&#xA;                    &#xD;&#xA; /* for circumstance in Insured Customer Accident Circumstances Input Data return Circumstances Enrichment(circumstance)*/">
+    <Decision name="_EB850E2F-612B-404F-801E-8AE76D5D8643" expression="InsuredCustomerAccidentCircumstancesInputData&#xD;&#xA;          := CounterpartyAccidentCircumstancesInputData&#xD;&#xA;                                                  |select(circumstance, CircumstancesEnrichment(circumstance))&#xD;&#xA;                    &#xD;&#xA;                    &#xD;&#xA; /* for circumstance in Insured Customer Accident Circumstances Input Data return Circumstances Enrichment(circumstance)*/">
       <Transition name="Transition52" to="SubDrd50" relationType="Information" />
     </Decision>
-    <Decision name="_579AF99C-CD42-4E8C-9E3A-B25528B8D2A1" expression="Counterparty Accident Circumstances = CounterpartyAccidentCircumstancesInputData&#xD;&#xA;                                                  |select(circumstance, Circumstances Enrichment(circumstance))&#xD;&#xA;              &#xD;&#xA; /* for circumstance in Counterparty Accident Circumstances Input Data return Circumstances Enrichment(circumstance) */">
+    <Decision name="_579AF99C-CD42-4E8C-9E3A-B25528B8D2A1" expression="Counterparty Accident Circumstances := CounterpartyAccidentCircumstancesInputData&#xD;&#xA;                                                  |select(circumstance, CircumstancesEnrichment(circumstance))&#xD;&#xA;              &#xD;&#xA; /* for circumstance in Counterparty Accident Circumstances Input Data return Circumstances Enrichment(circumstance) */">
       <Transition name="Transition53" to="SubDrd50" relationType="Information" />
     </Decision>
     <InputData name="CounterpartyAccidentCircumstancesInputData" type="Circumstances List" assembly="Glossaries\InputData.xml">
