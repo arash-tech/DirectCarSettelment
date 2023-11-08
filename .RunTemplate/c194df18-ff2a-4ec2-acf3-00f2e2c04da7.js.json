@@ -1,0 +1,29 @@
+{
+    "CounterpartyAccidentCircumstancesInputData":
+    {
+        "Circumstances":
+        ["3 - entering a parking place"
+        ]
+    },
+    "InsuredCustomerAccidentCircumstancesInputData":
+    {
+        "Circumstances":
+        ["3 - entering a parking place"
+        
+        ]
+    },
+    "Car Accident":
+    {
+        "Accident Statement Mutual Agreement":true,
+        "Accident Country":"Belgium",
+        "Claim Type":"Collision"
+    },
+    "Counterparty Object":
+    {
+        "Vehicle Type":"Car",
+        "Vehicle Insurance Obligation":true,
+        "Vehicle Country of Registration":"Belgium",
+        "Vehicle Insurance Company":"AG Insurance",
+        "Vehicle Insurance Status":"Insured"
+    }
+}

@@ -349,7 +349,32 @@
     </Size>
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition107" type="Transition">
+  <NodeInfo name="Liabilities" type="Option">
+    <Label>
+      <Text>Liabilities</Text>
+      <Font>
+        <Name>Microsoft Sans Serif</Name>
+        <Style>Regular</Style>
+        <Size>9</Size>
+      </Font>
+    </Label>
+    <FillColorFrom>-329006</FillColorFrom>
+    <FillColorTo>-329006</FillColorTo>
+    <Border>
+      <Color>-16777216</Color>
+      <Width>0.3</Width>
+    </Border>
+    <Location>
+      <X>25.80833</X>
+      <Y>19.04583</Y>
+    </Location>
+    <Size>
+      <Width>65.35208</Width>
+      <Height>36.24791</Height>
+    </Size>
+    <Description></Description>
+  </NodeInfo>
+  <NodeInfo name="Transition121" type="Transition">
     <Label>
       <Text>Gravity</Text>
       <Font>
@@ -401,7 +426,7 @@
     <Fact reference="Circumstance and Gravity.Gravity" to="Circumstance Gravities" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition108" type="Transition">
+  <NodeInfo name="Transition122" type="Transition">
     <Label>
       <Text>Circumstance and Gravity</Text>
       <Font>
@@ -453,7 +478,7 @@
     <Fact reference="Circumstances and Gravities List.Circumstance and Gravity" to="Circumstance and Gravity" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition109" type="Transition">
+  <NodeInfo name="Transition123" type="Transition">
     <Label>
       <Text>Vehicle Type</Text>
       <Font>
@@ -513,7 +538,7 @@
     <Fact reference="Object Input Data.Vehicle Type" to="Vehicle Type" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition110" type="Transition">
+  <NodeInfo name="Transition124" type="Transition">
     <Label>
       <Text>Vehicle Country of Registration</Text>
       <Font>
@@ -573,7 +598,7 @@
     <Fact reference="Object Input Data.Vehicle Country of Registration" to="Countries" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition111" type="Transition">
+  <NodeInfo name="Transition125" type="Transition">
     <Label>
       <Text>Vehicle Insurance Status</Text>
       <Font>
@@ -633,7 +658,7 @@
     <Fact reference="Object Input Data.Vehicle Insurance Status" to="Insurance Status" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition112" type="Transition">
+  <NodeInfo name="Transition126" type="Transition">
     <Label>
       <Text>Claim Type</Text>
       <Font>
@@ -685,7 +710,7 @@
     <Fact reference="Car Accident.Claim Type" to="Claim Type" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition113" type="Transition">
+  <NodeInfo name="Transition127" type="Transition">
     <Label>
       <Text>Circumstance</Text>
       <Font>
@@ -737,7 +762,7 @@
     <Fact reference="Circumstance and Gravity.Circumstance" to="Circumstances" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition114" type="Transition">
+  <NodeInfo name="Transition128" type="Transition">
     <Label>
       <Text>Circumstances</Text>
       <Font>
@@ -789,7 +814,7 @@
     <Fact reference="Circumstances List.Circumstances" to="Circumstances" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition115" type="Transition">
+  <NodeInfo name="Transition129" type="Transition">
     <Label>
       <Text>Accident Country</Text>
       <Font>
@@ -839,31 +864,6 @@
       </End>
     </Points>
     <Fact reference="Car Accident.Accident Country" to="Countries" />
-    <Description></Description>
-  </NodeInfo>
-  <NodeInfo name="Liabilities" type="Option">
-    <Label>
-      <Text>Liabilities</Text>
-      <Font>
-        <Name>Microsoft Sans Serif</Name>
-        <Style>Regular</Style>
-        <Size>9</Size>
-      </Font>
-    </Label>
-    <FillColorFrom>-329006</FillColorFrom>
-    <FillColorTo>-329006</FillColorTo>
-    <Border>
-      <Color>-16777216</Color>
-      <Width>0.3</Width>
-    </Border>
-    <Location>
-      <X>25.80833</X>
-      <Y>19.04583</Y>
-    </Location>
-    <Size>
-      <Width>65.35208</Width>
-      <Height>36.24791</Height>
-    </Size>
     <Description></Description>
   </NodeInfo>
 </Nodes>
