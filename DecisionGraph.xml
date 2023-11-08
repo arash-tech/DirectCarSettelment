@@ -1,8 +1,6 @@
 <DRD name="DecisionGraph">
   <Declaration>
     <Define name="Insured Customer Number of Circumstances" type="int" direction="Local" />
-    <Define name="Insured Customer Accident Circumstances" type="Circumstances and Gravities List" assembly="Glossaries\InputData.xml" direction="In" value="[]" />
-    <Define name="Counterparty Accident Circumstances" type="Circumstances and Gravities List" assembly="Glossaries\InputData.xml" direction="In" value="[]" />
     <Define name="Counterparty Number of Circumstances" type="int" direction="Local" />
   </Declaration>
   <Nodes>
@@ -13,10 +11,10 @@
       <Transition name="Transition183" to="Decision73" relationType="Information" />
     </Decision>
     <Decision name="Decision71" uri="Insured Customer Accident Circumstance.xml" contextMode="Shared" type="Table">
-      <Transition name="Transition184" to="Decision75" relationType="Information" />
+      <Transition name="Transition71" to="Decision171" relationType="Information" />
     </Decision>
     <Decision name="Decision73" uri="Counterparty Accident Circumstance.xml" contextMode="Shared" type="Table">
-      <Transition name="Transition170" to="Decision82" relationType="Information" />
+      <Transition name="Transition64" to="Decision171" relationType="Information" />
     </Decision>
     <Decision name="Decision75" uri="Insured Customer Highest Circumstance Gravity.xml" contextMode="Shared" type="Table">
       <Transition name="Transition186" to="Decision100" relationType="Information" />
@@ -28,5 +26,11 @@
       <Transition name="Transition172" to="Decision171" relationType="Information" />
     </Decision>
     <Decision name="Decision171" uri="Car Accident Liability.xml" contextMode="Shared" type="Table" />
+    <InputData name="Insured Customer Accident Circumstances" isOutput="False" type="Circumstances and Gravities List" assembly="Glossaries\InputData.xml">
+      <Transition name="Transition269" to="Decision171" relationType="Information" />
+    </InputData>
+    <InputData name="Counterparty Accident Circumstances" isOutput="False" type="Circumstances and Gravities List" assembly="Glossaries\InputData.xml">
+      <Transition name="Transition55" to="Decision171" relationType="Information" />
+    </InputData>
   </Nodes>
 </DRD>
