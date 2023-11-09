@@ -1,11 +1,11 @@
 {
-    "CounterpartyAccidentCircumstancesInputData":
+    "Counterparty Accident Circumstances Input Data":
     {
         "Circumstances":
         ["2 - leaving a parking place"
         ]
     },
-    "InsuredCustomerAccidentCircumstancesInputData":
+    "Insured Customer Accident Circumstances Input Data":
     {
         "Circumstances":
         ["3 - entering a parking place"

@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<ExecTemplate>
-  <Record date="2023-08-24T01:21:25.8155727Z" file="TestingFlow.xml" title="[">
-    <Run providerType="JSONComposer" file=".RunTemplate\c3b64950-2580-4698-957b-a6b0e2b66e1d.js.json" />
-    <Options input="1" target="0" logic="" />
-  </Record>
-</ExecTemplate>

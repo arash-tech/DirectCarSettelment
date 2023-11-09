@@ -191,7 +191,7 @@
       <Height>12.96458</Height>
     </Size>
   </NodeInfo>
-  <NodeInfo name="CounterpartyAccidentCircumstancesInputData" type="InputData">
+  <NodeInfo name="Counterparty Accident Circumstances Input Data" type="InputData">
     <Label>
       <Text>Counterparty Accident Circumstances Input Data</Text>
       <Font>
@@ -229,7 +229,7 @@
       <Height>14.64581</Height>
     </Size>
   </NodeInfo>
-  <NodeInfo name="InsuredCustomerAccidentCircumstancesInputData" type="InputData">
+  <NodeInfo name="Insured Customer Accident Circumstances Input Data" type="InputData">
     <Label>
       <Text>Insured Customer Accident Circumstances Input Data</Text>
       <Font>
