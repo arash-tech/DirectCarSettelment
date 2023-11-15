@@ -6,5 +6,8 @@
     <Test Description="" id="Test50">
       <AssertTrue Description="" id="AssertTrue51" />
     </Test>
+    <Test Description="" id="Test96">
+      <AssertTrue Description="" id="AssertTrue97" />
+    </Test>
   </Section>
 </TestCase>

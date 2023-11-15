@@ -2,13 +2,13 @@
     "Counterparty Accident Circumstances Input Data":
     {
         "Circumstances":
-        ["2bis - opening the door","3 - entering a parking place"
+        ["11 - overtaking","17 - had not observed a right of way sign"
         ]
     },
     "Insured Customer Accident Circumstances Input Data":
     {
         "Circumstances":
-        ["2 - leaving a parking place","6 - entering a roundabout"
+        ["12 - turning to the right","2 - leaving a parking place"
         ]
     },
     "Car Accident":
