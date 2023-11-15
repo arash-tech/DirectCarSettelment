@@ -1,0 +1,93 @@
+{
+    "Counterparty Object":
+    {
+        "Vehicle Type":"Car",
+			"Vehicle Country of Registration":"Belgium",
+			"Vehicle Insurance Obligation":true,
+			"Vehicle Insurance Status":"Insured",
+			"Vehicle Insurance Company":"AG Insurance"
+    },
+    "RDR Affiliated Companies":[
+    {
+        "Company" : "ABN Amro Life SA"
+    },
+    {
+        "Company" : "AG Insurance"
+    },
+    {
+        "Company" : "AIOI Nissay Dowa Insurance Company of Europe"
+    },
+    {
+        "Company" : "Allianz Benelux"
+    },
+    {
+        "Company" : "Alpha Insurance"
+    },
+    {
+        "Company" : "AMMA Verzekeringen"
+    },
+    {
+        "Company" : "Argenta Assuranties N.V."
+    },
+    {
+        "Company" : "ASCO Continentale Verzekeringen"
+    },
+    {
+        "Company" : "Athora Belgium"
+    },
+    {
+        "Company" : "AXA Belgium"
+    },
+    {
+        "Company" : "Baloise Belgium"
+    },
+    {
+        "Company" : "Belfius Verzekeringen"
+    },
+    {
+        "Company" : "Belgisch Gemeenschappelijk Waarborgfonds"
+    },
+    {
+        "Company" : "Corona"
+    },
+    {
+        "Company" : "Ethias"
+    },
+    {
+        "Company" : "Federale Verzekering (Ongevallen, Brand, BA, DV)"
+    },
+    {
+        "Company" : "FIDEA"
+    },
+    {
+        "Company" : "Foyer Assurances S.A."
+    },
+    {
+        "Company" : "Greenval Insurance \u0027Company\u0027 Ltd"
+    },
+    {
+        "Company" : "KBC Verzekeringen"
+    },
+    {
+        "Company" : "LArdenne Prévoyante"
+    },
+    {
+        "Company" : "Monceau Générale Assurances"
+    },
+    {
+        "Company" : "MS Amlin Insurance"
+    },
+    {
+        "Company" : "NN Non-Life Insurance"
+    },
+    {
+        "Company" : "Optimco"
+    },
+    {
+        "Company" : "P\u0026V Verzekeringen"
+    },
+    {
+        "Company" : "Yuzzu"
+    }
+]
+}

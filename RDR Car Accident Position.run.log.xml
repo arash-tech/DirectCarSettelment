@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExecTemplate>
+  <Record date="2023-08-31T01:31:54.7388279Z" file="RDR Car Accident Position.xml" title="Test Run 1" description="RDR Car Accident Position = Shared Liability">
+    <Run providerType="JSONComposer" file=".RunTemplate\a6e8f5af-18dd-4a71-bfd1-72fcd919c92f.js.json" />
+    <Options input="1" target="0" logic="" />
+  </Record>
+  <Record date="2023-11-01T03:18:03.4781188Z" file="RDR Car Accident Position.xml" title="Test Run 2" description="RDR Car Accident Position= Shared Liability">
+    <Run providerType="JSONComposer" file=".RunTemplate\ee32f950-9df3-4be9-9409-88d5e13917df.js.json" />
+    <Options input="1" target="0" logic="" />
+  </Record>
+  <Record date="2023-11-02T04:34:46.0383105Z" file="RDR Car Accident Position.xml" title="Test Run 3" description="RDR Car Accident Position=Shared Liability">
+    <Run providerType="JSONComposer" file=".RunTemplate\2d3716ff-cb3c-4b00-8ee4-0599d19ee460.js.json" />
+    <Options input="1" target="0" logic="" />
+  </Record>
+  <Record date="2023-11-02T04:46:15.5703543Z" file="RDR Car Accident Position.xml" title="Test Run 4" description="RDR Car Accident Position= Counterparty Liability">
+    <Run providerType="JSONComposer" file=".RunTemplate\aaa07676-6827-4741-a554-1748ac93556c.js.json" />
+    <Options input="1" target="0" logic="" />
+  </Record>
+  <Record date="2023-11-07T22:58:20.7876353Z" file="RDR Car Accident Position.xml" title="Test Run 5" description="RDR Car Accident Position=Insured Customer Liability">
+    <Run providerType="JSONComposer" file=".RunTemplate\05a01b32-1eaa-4edf-9344-69a02dfe2884.js.json" />
+    <Options input="1" target="0" logic="" />
+  </Record>
+  <Record date="2023-11-15T01:03:29.1512999Z" file="RDR Car Accident Position.xml" title="T1">
+    <Run providerType="JSONComposer" file=".RunTemplate\335e371c-b42c-4efa-a8cc-de0ca7a3006c.js.json" />
+    <Options input="1" target="0" logic="" />
+  </Record>
+</ExecTemplate>

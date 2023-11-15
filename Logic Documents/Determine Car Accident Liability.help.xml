@@ -1,5 +1,5 @@
 <Nodes version="2">
-  <NodeInfo name="DecisionGraph" type="DRD" />
+  <NodeInfo name="Determine Car Accident Liability" type="DRD" />
   <NodeInfo name="Decision69" type="Decision">
     <Label>
       <Text>Insured Customer Number of Circumstances</Text>
@@ -342,6 +342,44 @@
       <Height>13.05416</Height>
     </Size>
   </NodeInfo>
+  <NodeInfo name="Counterparty Accident Circumstances" type="InputData">
+    <Label>
+      <Text>Counterparty Accident Circumstances</Text>
+      <Font>
+        <Name>Microsoft Sans Serif</Name>
+        <Style>Regular</Style>
+        <Size>9</Size>
+      </Font>
+      <Size>
+        <Width>30.42708</Width>
+        <Height>14.1125</Height>
+      </Size>
+      <Location>
+        <X>164.4437</X>
+        <Y>1.806249</Y>
+      </Location>
+      <Alignment>
+        <Vertical>Center</Vertical>
+        <Horizontal>Center</Horizontal>
+      </Alignment>
+    </Label>
+    <Image></Image>
+    <ImageAlign>Center</ImageAlign>
+    <FillColorFrom>-2572328</FillColorFrom>
+    <FillColorTo>-2572328</FillColorTo>
+    <Border>
+      <Color>-16777216</Color>
+      <Width>0.3</Width>
+    </Border>
+    <Location>
+      <X>164.8833</X>
+      <Y>2.864581</Y>
+    </Location>
+    <Size>
+      <Width>28.64166</Width>
+      <Height>13.05416</Height>
+    </Size>
+  </NodeInfo>
   <NodeInfo name="Transition182" type="Transition">
     <Label>
       <Text></Text>
@@ -442,6 +480,106 @@
       </End>
     </Points>
   </NodeInfo>
+  <NodeInfo name="Transition71" type="Transition">
+    <Label>
+      <Text></Text>
+      <Font>
+        <Name>Microsoft Sans Serif</Name>
+        <Style>Regular</Style>
+        <Size>9</Size>
+      </Font>
+    </Label>
+    <FillColorFrom>-9868951</FillColorFrom>
+    <FillColorTo>-9868951</FillColorTo>
+    <Border>
+      <Color>-16777216</Color>
+      <Width>0.3</Width>
+    </Border>
+    <Location>
+      <X>116.1189</X>
+      <Y>16.41249</Y>
+    </Location>
+    <Size>
+      <Width>9.163704</Width>
+      <Height>17.13334</Height>
+    </Size>
+    <Shape>Polyline</Shape>
+    <SegmentCount>1</SegmentCount>
+    <Anchors>
+      <Origin>-1</Origin>
+      <Destination>-1</Destination>
+    </Anchors>
+    <Head>Triangle</Head>
+    <Pen>0/#FF000000/0.3/0/0//0/0/10/</Pen>
+    <Points>
+      <Point>
+        <X>124.9826</X>
+        <Y>33.24583</Y>
+      </Point>
+      <Point>
+        <X>116.4189</X>
+        <Y>16.71249</Y>
+      </Point>
+      <Start>
+        <X>124.9826</X>
+        <Y>33.24583</Y>
+      </Start>
+      <End>
+        <X>116.4189</X>
+        <Y>16.71249</Y>
+      </End>
+    </Points>
+  </NodeInfo>
+  <NodeInfo name="Transition64" type="Transition">
+    <Label>
+      <Text></Text>
+      <Font>
+        <Name>Microsoft Sans Serif</Name>
+        <Style>Regular</Style>
+        <Size>9</Size>
+      </Font>
+    </Label>
+    <FillColorFrom>-9868951</FillColorFrom>
+    <FillColorTo>-9868951</FillColorTo>
+    <Border>
+      <Color>-16777216</Color>
+      <Width>0.3</Width>
+    </Border>
+    <Location>
+      <X>128.1163</X>
+      <Y>16.41249</Y>
+    </Location>
+    <Size>
+      <Width>36.25819</Width>
+      <Height>17.13334</Height>
+    </Size>
+    <Shape>Polyline</Shape>
+    <SegmentCount>1</SegmentCount>
+    <Anchors>
+      <Origin>-1</Origin>
+      <Destination>-1</Destination>
+    </Anchors>
+    <Head>Triangle</Head>
+    <Pen>0/#FF000000/0.3/0/0//0/0/10/</Pen>
+    <Points>
+      <Point>
+        <X>164.0745</X>
+        <Y>33.24583</Y>
+      </Point>
+      <Point>
+        <X>128.4163</X>
+        <Y>16.71249</Y>
+      </Point>
+      <Start>
+        <X>164.0745</X>
+        <Y>33.24583</Y>
+      </Start>
+      <End>
+        <X>128.4163</X>
+        <Y>16.71249</Y>
+      </End>
+    </Points>
+  </NodeInfo>
   <NodeInfo name="Transition186" type="Transition">
     <Label>
       <Text></Text>
@@ -462,7 +600,7 @@
       <Y>47.58749</Y>
     </Location>
     <Size>
-      <Width>11.57684</Width>
+      <Width>11.57685</Width>
       <Height>8.977077</Height>
     </Size>
     <Shape>Polyline</Shape>
@@ -562,7 +700,7 @@
       <Y>16.41249</Y>
     </Location>
     <Size>
-      <Width>27.69461</Width>
+      <Width>27.69463</Width>
       <Height>17.13334</Height>
     </Size>
     <Shape>Polyline</Shape>
@@ -642,44 +780,6 @@
       </End>
     </Points>
   </NodeInfo>
-  <NodeInfo name="Counterparty Accident Circumstances" type="InputData">
-    <Label>
-      <Text>Counterparty Accident Circumstances</Text>
-      <Font>
-        <Name>Microsoft Sans Serif</Name>
-        <Style>Regular</Style>
-        <Size>9</Size>
-      </Font>
-      <Size>
-        <Width>30.42708</Width>
-        <Height>14.1125</Height>
-      </Size>
-      <Location>
-        <X>164.4437</X>
-        <Y>1.806249</Y>
-      </Location>
-      <Alignment>
-        <Vertical>Center</Vertical>
-        <Horizontal>Center</Horizontal>
-      </Alignment>
-    </Label>
-    <Image></Image>
-    <ImageAlign>Center</ImageAlign>
-    <FillColorFrom>-2572328</FillColorFrom>
-    <FillColorTo>-2572328</FillColorTo>
-    <Border>
-      <Color>-16777216</Color>
-      <Width>0.3</Width>
-    </Border>
-    <Location>
-      <X>164.8833</X>
-      <Y>2.864581</Y>
-    </Location>
-    <Size>
-      <Width>28.64166</Width>
-      <Height>13.05416</Height>
-    </Size>
-  </NodeInfo>
   <NodeInfo name="Transition55" type="Transition">
     <Label>
       <Text></Text>
@@ -700,7 +800,7 @@
       <Y>9.090293</Y>
     </Location>
     <Size>
-      <Width>36.33897</Width>
+      <Width>36.33891</Width>
       <Height>0.6009789</Height>
     </Size>
     <Shape>Polyline</Shape>
@@ -727,106 +827,6 @@
       <End>
         <X>129.2083</X>
         <Y>9.390293</Y>
-      </End>
-    </Points>
-  </NodeInfo>
-  <NodeInfo name="Transition64" type="Transition">
-    <Label>
-      <Text></Text>
-      <Font>
-        <Name>Microsoft Sans Serif</Name>
-        <Style>Regular</Style>
-        <Size>9</Size>
-      </Font>
-    </Label>
-    <FillColorFrom>-9868951</FillColorFrom>
-    <FillColorTo>-9868951</FillColorTo>
-    <Border>
-      <Color>-16777216</Color>
-      <Width>0.3</Width>
-    </Border>
-    <Location>
-      <X>128.1163</X>
-      <Y>16.41249</Y>
-    </Location>
-    <Size>
-      <Width>36.25822</Width>
-      <Height>17.13334</Height>
-    </Size>
-    <Shape>Polyline</Shape>
-    <SegmentCount>1</SegmentCount>
-    <Anchors>
-      <Origin>-1</Origin>
-      <Destination>-1</Destination>
-    </Anchors>
-    <Head>Triangle</Head>
-    <Pen>0/#FF000000/0.3/0/0//0/0/10/</Pen>
-    <Points>
-      <Point>
-        <X>164.0745</X>
-        <Y>33.24583</Y>
-      </Point>
-      <Point>
-        <X>128.4163</X>
-        <Y>16.71249</Y>
-      </Point>
-      <Start>
-        <X>164.0745</X>
-        <Y>33.24583</Y>
-      </Start>
-      <End>
-        <X>128.4163</X>
-        <Y>16.71249</Y>
-      </End>
-    </Points>
-  </NodeInfo>
-  <NodeInfo name="Transition71" type="Transition">
-    <Label>
-      <Text></Text>
-      <Font>
-        <Name>Microsoft Sans Serif</Name>
-        <Style>Regular</Style>
-        <Size>9</Size>
-      </Font>
-    </Label>
-    <FillColorFrom>-9868951</FillColorFrom>
-    <FillColorTo>-9868951</FillColorTo>
-    <Border>
-      <Color>-16777216</Color>
-      <Width>0.3</Width>
-    </Border>
-    <Location>
-      <X>116.1189</X>
-      <Y>16.41249</Y>
-    </Location>
-    <Size>
-      <Width>9.16362</Width>
-      <Height>17.13334</Height>
-    </Size>
-    <Shape>Polyline</Shape>
-    <SegmentCount>1</SegmentCount>
-    <Anchors>
-      <Origin>-1</Origin>
-      <Destination>-1</Destination>
-    </Anchors>
-    <Head>Triangle</Head>
-    <Pen>0/#FF000000/0.3/0/0//0/0/10/</Pen>
-    <Points>
-      <Point>
-        <X>124.9826</X>
-        <Y>33.24583</Y>
-      </Point>
-      <Point>
-        <X>116.4189</X>
-        <Y>16.71249</Y>
-      </Point>
-      <Start>
-        <X>124.9826</X>
-        <Y>33.24583</Y>
-      </Start>
-      <End>
-        <X>116.4189</X>
-        <Y>16.71249</Y>
       </End>
     </Points>
   </NodeInfo>

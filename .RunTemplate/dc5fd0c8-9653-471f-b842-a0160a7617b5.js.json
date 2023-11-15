@@ -1,0 +1,22 @@
+{
+    "Insured Customer Accident Circumstances":
+    {
+        "Circumstance and Gravity":
+       [
+    {
+        "Circumstance" : "6 - entering a roundabout",
+        "Gravity" : "Neutral"
+    }
+]
+    },
+    "Counterparty Accident Circumstances":
+    {
+        "Circumstance and Gravity":
+[
+    {
+        "Circumstance" : "17 - had not observed a right of way sign",
+        "Gravity" : "Neutral"
+    }
+]
+    }
+}

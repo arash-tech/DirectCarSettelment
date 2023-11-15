@@ -1,0 +1,31 @@
+{
+    "Insured Customer Accident Circumstances":
+    {
+        "Circumstance and Gravity":
+       [
+    {
+        "Circumstance" : "2 - leaving a parking place",
+        "Gravity" : "Inculpatory"
+    },
+    {
+        "Circumstance" : "6 - entering a roundabout",
+        "Gravity" : "Neutral"
+    }
+]
+       
+    },
+    "Counterparty Accident Circumstances":
+    {
+        "Circumstance and Gravity":
+        [
+    {
+        "Circumstance" : "2bis - opening the door",
+        "Gravity" : "Inculpatory"
+    },
+    {
+        "Circumstance" : "3 - entering a parking place",
+        "Gravity" : "Neutral"
+    }
+]
+    }
+}

@@ -7,15 +7,18 @@
     <GlossarySource uri="Glossaries\BoxedExpressions.xml" />
   </Glossary>
   <Nodes>
-    <Decision name="Decision172" uri="Counterparty Insurance RDR Affiliated.xml" contextMode="Shared" type="Table">
+    <Decision name="Decision172" uri="Logic Documents\Counterparty Insurance RDR Affiliated.xml" contextMode="Shared" type="Table">
       <Transition name="Transition197" to="Decision196" relationType="Information" />
     </Decision>
-    <Decision name="Decision195" uri="Motor Vehicle.xml" contextMode="Shared" type="Table">
+    <Decision name="Decision195" uri="Logic Documents\Motor Vehicle.xml" contextMode="Shared" type="Table">
       <Transition name="Transition198" to="Decision196" relationType="Information" />
     </Decision>
-    <Decision name="Decision196" uri="CounterpartyObjectRDREligibility.xml" contextMode="Shared" type="Table" />
+    <Decision name="Decision196" uri="Logic Documents\CounterpartyObjectRDREligibility.xml" contextMode="Shared" type="Table" />
     <InputData name="Counterparty Object" isOutput="False" type="Object Input Data" assembly="Glossaries\InputData.xml">
       <Transition name="Transition138" to="Decision196" relationType="Information" />
+    </InputData>
+    <InputData name="RDR Affiliated Companies" isOutput="False">
+      <Transition name="Transition129" to="Decision196" relationType="Information" />
     </InputData>
   </Nodes>
 </DRD>

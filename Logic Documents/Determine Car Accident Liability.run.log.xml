@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExecTemplate>
+  <Record date="2023-11-15T00:55:52.165474Z" file="Logic Documents\Determine Car Accident Liability.xml" title="Test Run 1 - 1 Circumstance" description="Car Accident Liability = Liability Cannot be determined">
+    <Run providerType="JSONComposer" file=".RunTemplate\dc5fd0c8-9653-471f-b842-a0160a7617b5.js.json" />
+    <Options input="1" target="0" logic="" />
+  </Record>
+  <Record date="2023-11-15T01:06:24.0805979Z" file="Logic Documents\Determine Car Accident Liability.xml" title="Test Run2 - 2 Circumstance" description="Car Accident Liability = Liability Cannot be Determine">
+    <Run providerType="JSONComposer" file=".RunTemplate\c20aa830-5f1a-440b-8d5d-99fe8eb97505.js.json" />
+    <Options input="1" target="0" logic="" />
+  </Record>
+</ExecTemplate>

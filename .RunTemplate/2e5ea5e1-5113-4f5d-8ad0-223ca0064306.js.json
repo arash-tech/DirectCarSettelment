@@ -2,19 +2,20 @@
     "Counterparty Accident Circumstances Input Data":
     {
         "Circumstances":
-        ["3 - entering a parking place"
+        ["5 - entering a car park, private ground, a track"
+        
         ]
     },
     "Insured Customer Accident Circumstances Input Data":
     {
         "Circumstances":
-        ["3 - entering a parking place"
+        ["1 - parked/stopped"
         
         ]
     },
     "Car Accident":
     {
-        "Accident Statement Mutual Agreement":true,
+        "Accident Statement Mutual Agreement":false,
         "Accident Country":"Belgium",
         "Claim Type":"Collision"
     },

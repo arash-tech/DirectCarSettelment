@@ -1,0 +1,56 @@
+<Workflow name="Workflow">
+  <Declaration>
+    <Define name="RDR Car Accident Position" type="RDR Car Accident Positions" assembly="Glossaries\InputData.xml" direction="Local" />
+    <Define name="Outcome" direction="Out" />
+    <Define name="Counterparty Object" type="Object Input Data" assembly="Glossaries\InputData.xml" direction="In" />
+    <Define name="Car Accident" type="Car Accident" assembly="Glossaries\InputData.xml" direction="In" />
+    <Define name="Insured Customer Accident Circumstances Input Data" type="Circumstances List" assembly="Glossaries\InputData.xml" direction="In" />
+    <Define name="Counterparty Accident Circumstances Input Data" type="Circumstances List" assembly="Glossaries\InputData.xml" direction="In" />
+  </Declaration>
+  <Nodes>
+    <Start name="Start100">
+      <Transition name="Transition102" to="Activity101" />
+    </Start>
+    <Activity name="Activity101">
+      <CallDrd contextMode="Shared">
+        <DrdSource uri="RDR Car Accident Position.xml" />
+      </CallDrd>
+      <Transition name="Transition104" to="Decision103" />
+    </Activity>
+    <Decision name="Decision103">
+      <Transition name="Transition108" to="HumanTask107" condition="RDR Car Accident Position == 'No RDR Applicable'" />
+      <Transition name="Transition122" to="Activity113" />
+    </Decision>
+    <Task name="HumanTask107" title="Underwritter" type="Single">
+      <Expectations>
+        <Outcome displayName="Counterparty Liability" name="Counterparty Liability" />
+        <Outcome displayName="Insured Customer Liability" name="Insured Customer Liability" />
+      </Expectations>
+      <Transition name="Transition110" to="Activity109" outcome="Insured Customer Liability" />
+      <Transition name="Transition142" to="Activity141" outcome="Counterparty Liability" />
+    </Task>
+    <Activity name="Activity109">
+      <Notification>
+        <Notice message="RDR setlement cannot be applied" type="Warning" />
+        <Notice message="Underwriter's Decision is Insured Customer Liability" type="Information" />
+      </Notification>
+      <Transition name="Transition112" to="End111" />
+    </Activity>
+    <End name="End111" />
+    <Activity name="Activity113">
+      <Notification>
+        <Notice message="{RDR Car Accident Position}" type="Information" />
+      </Notification>
+      <Transition name="Transition116" to="Terminate115" />
+    </Activity>
+    <Terminate name="Terminate115" />
+    <Activity name="Activity141">
+      <Notification>
+        <Notice message="RDR setlement cannot be applied" type="Warning" />
+        <Notice message="Underwriter's Decision is Counterparty Liability" type="Information" />
+      </Notification>
+      <Transition name="Transition144" to="Terminate143" />
+    </Activity>
+    <Terminate name="Terminate143" />
+  </Nodes>
+</Workflow>

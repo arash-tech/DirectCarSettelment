@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExecTemplate>
+  <Record date="2023-11-14T03:37:09.8654468Z" file="Workflow.xml" title="Eneligible" description="Eneligible due to  Accident Statement Mutual Agreement&quot; : false" task="&lt;Select the Task for Signal's Data&gt;">
+    <Run providerType="JSONComposer" file=".RunTemplate\2e5ea5e1-5113-4f5d-8ad0-223ca0064306.js.json" />
+    <Options input="1" target="0" logic="" />
+  </Record>
+  <Record date="2023-11-14T23:43:06.1722417Z" file="Workflow.xml" title="RDR Settlement ✔" description="Counterparty Liability">
+    <Run providerType="JSONComposer" file=".RunTemplate\ccf97ac9-7f0c-49a1-b4ef-788c2f8cdc8a.js.json" />
+    <Options input="1" target="0" logic="" />
+  </Record>
+  <Record date="2023-11-14T23:55:36.9088205Z" file="Workflow.xml" title="Ineligible for RDR settlement  ⏳" description="Ineligible due to &quot;Vehicle Insurance Obligation&quot;:false">
+    <Run providerType="JSONComposer" file=".RunTemplate\901fbb4b-af1b-480f-b1e5-87d88c4aa42d.js.json" />
+    <Options input="1" target="0" logic="" />
+  </Record>
+</ExecTemplate>
