@@ -1,0 +1,126 @@
+<Workflow name="ComplexFlow">
+  <Nodes>
+    <Start name="Start171">
+      <Transition name="Transition121" to="Gateway120" />
+    </Start>
+    <Activity name="Activity190">
+      <CallDecisionTable contextMode="Shared">
+        <DecisionTableSource uri="Logic Documents\Counterparty Insurance RDR Affiliated.xml" />
+      </CallDecisionTable>
+      <Transition name="Transition57" to="Activity56" />
+    </Activity>
+    <Activity name="Activity47">
+      <CallDecisionTable contextMode="Shared">
+        <DecisionTableSource uri="Logic Documents\Motor Vehicle.xml" />
+      </CallDecisionTable>
+      <Transition name="Transition58" to="Activity56" />
+    </Activity>
+    <Activity name="Activity56">
+      <CallDecisionTable contextMode="Shared">
+        <DecisionTableSource uri="Logic Documents\CounterpartyObjectRDREligibility.xml" />
+      </CallDecisionTable>
+      <Transition name="Transition72" to="Activity71" />
+    </Activity>
+    <Activity name="Activity60" expression="RDR Affiliated Companies= Company List">
+      <Transition name="Transition61" to="Activity190" />
+      <Transition name="Transition62" to="Activity47" />
+    </Activity>
+    <Activity name="Activity70">
+      <CallDecisionTable contextMode="Shared">
+        <DecisionTableSource uri="Logic Documents\Car Accident RDR Eligibility.xml" />
+      </CallDecisionTable>
+      <Transition name="Transition73" to="Activity71" />
+    </Activity>
+    <Activity name="Activity71">
+      <CallDecisionTable contextMode="Shared">
+        <DecisionTableSource uri="Logic Documents\RDR Clearing Eligibility.xml" />
+      </CallDecisionTable>
+      <Transition name="Transition80" to="Activity74" />
+    </Activity>
+    <Activity name="Activity74">
+      <CallDecisionTable contextMode="Shared">
+        <DecisionTableSource uri="Logic Documents\DT RDR Car Accident Position.xml" />
+      </CallDecisionTable>
+      <Transition name="Transition183" to="Decision182" />
+    </Activity>
+    <Activity name="Activity82">
+      <Transition name="Transition105" to="Activity104" />
+      <Transition name="Transition274" to="Activity260" />
+    </Activity>
+    <Activity name="Activity83">
+      <Transition name="Transition113" to="Activity112" />
+      <Transition name="Transition275" to="Activity267" />
+    </Activity>
+    <Activity name="Activity104">
+      <Transition name="Transition111" to="Activity110" />
+    </Activity>
+    <Activity name="Activity110">
+      <CallDecisionTable contextMode="Shared">
+        <DecisionTableSource uri="Logic Documents\Insured Customer Accident Circumstance.xml" />
+      </CallDecisionTable>
+      <Transition name="Transition118" to="Activity116" />
+    </Activity>
+    <Activity name="Activity112">
+      <Transition name="Transition115" to="Activity114" />
+    </Activity>
+    <Activity name="Activity114">
+      <CallDecisionTable contextMode="Shared">
+        <DecisionTableSource uri="Logic Documents\Counterparty Accident Circumstance.xml" />
+      </CallDecisionTable>
+      <Transition name="Transition119" to="Activity116" />
+    </Activity>
+    <Activity name="Activity116">
+      <CallDecisionTable contextMode="Shared">
+        <DecisionTableSource uri="Logic Documents\Car Accident Liability.xml" />
+      </CallDecisionTable>
+      <Transition name="Transition117" to="Activity74" />
+    </Activity>
+    <Gateway name="Gateway120" type="Parallel">
+      <Transition name="Transition122" to="Activity60" />
+      <Transition name="Transition123" to="Activity70" />
+      <Transition name="Transition124" to="Activity82" />
+      <Transition name="Transition125" to="Activity83" />
+    </Gateway>
+    <Decision name="Decision182">
+      <Transition name="Transition185" to="Activity184" />
+      <Transition name="Transition189" to="HumanTask188" />
+    </Decision>
+    <Activity name="Activity184">
+      <Notification />
+      <Transition name="Transition187" to="End186" />
+    </Activity>
+    <End name="End186" />
+    <Task name="HumanTask188" type="Single">
+      <Transition name="Transition193" to="Activity192" />
+      <Transition name="Transition194" to="Activity191" />
+    </Task>
+    <Activity name="Activity191">
+      <Notification />
+      <Transition name="Transition196" to="Terminate195" />
+    </Activity>
+    <Activity name="Activity192">
+      <Notification />
+      <Transition name="Transition198" to="Terminate197" />
+    </Activity>
+    <Terminate name="Terminate195" />
+    <Terminate name="Terminate197" />
+    <Activity name="Activity258">
+      <CallDecisionTable contextMode="Shared">
+        <DecisionTableSource uri="Logic Documents\Circumstance Gravity Liability.xml" />
+      </CallDecisionTable>
+      <Transition name="Transition259" to="Activity116" />
+    </Activity>
+    <Activity name="Activity260">
+      <CallDecisionTable contextMode="Shared">
+        <DecisionTableSource uri="Logic Documents\Insured Customer Highest Circumstance Gravity.xml" />
+      </CallDecisionTable>
+      <Transition name="Transition276" to="Activity258" />
+    </Activity>
+    <Activity name="Activity267">
+      <CallDecisionTable contextMode="Shared">
+        <DecisionTableSource uri="Logic Documents\Counterparty Highest Circumstance Gravity.xml" />
+      </CallDecisionTable>
+      <Transition name="Transition277" to="Activity258" />
+    </Activity>
+  </Nodes>
+</Workflow>

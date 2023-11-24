@@ -95,7 +95,7 @@
           <bounds x="1" y="0" width="1" height="1" />
           <style t="2">
             <height>14.25pt</height>
-            <hidden>0</hidden>
+            <hidden>1</hidden>
             <outlineLevel>1</outlineLevel>
             <conditionalFormats />
             <fontSize>8</fontSize>
@@ -172,7 +172,7 @@
           <bounds x="2" y="0" width="1" height="1" />
           <style t="2">
             <height>14.25pt</height>
-            <hidden>0</hidden>
+            <hidden>1</hidden>
             <outlineLevel>1</outlineLevel>
             <conditionalFormats />
             <fontSize>8</fontSize>
@@ -312,7 +312,7 @@
             <v t="23">4</v>
           </c>
         </row>
-        <row r="3" title="1" pageBreak="0" collapsed="0">
+        <row r="3" title="1" pageBreak="0" collapsed="1">
           <c c="0">
             <v t="23">10</v>
           </c>
