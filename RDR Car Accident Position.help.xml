@@ -78,7 +78,7 @@
   </NodeInfo>
   <NodeInfo name="_7D45A0FD-C8C4-40DB-850C-464F0CB8AD2A" type="KnowledgeSource">
     <Label>
-      <Text>RDR Convention</Text>
+      <Text>Rapid Dispute Recovery Convention</Text>
       <Font>
         <Name>Microsoft Sans Serif</Name>
         <Style>Regular</Style>
@@ -89,8 +89,8 @@
         <Height>11.1125</Height>
       </Size>
       <Location>
-        <X>189.0635</X>
-        <Y>9.2526</Y>
+        <X>191.1697</X>
+        <Y>11.36926</Y>
       </Location>
       <Alignment>
         <Vertical>Center</Vertical>
@@ -110,8 +110,8 @@
       <Y>9.78177</Y>
     </Location>
     <Size>
-      <Width>20.67293</Width>
-      <Height>14.75104</Height>
+      <Width>23.82703</Width>
+      <Height>18.16249</Height>
     </Size>
     <Description>"https://www.assuralia.be/nl/26-sectorinfo/conventies/189-conventie-rdr-en-expertise"</Description>
   </NodeInfo>
@@ -600,11 +600,11 @@
     </Border>
     <Location>
       <X>158.1834</X>
-      <Y>16.85729</Y>
+      <Y>17.24686</Y>
     </Location>
     <Size>
-      <Width>30.86662</Width>
-      <Height>0.5999985</Height>
+      <Width>30.86661</Width>
+      <Height>1.545198</Height>
     </Size>
     <Shape>Polyline</Shape>
     <SegmentCount>1</SegmentCount>
@@ -617,19 +617,19 @@
     <Points>
       <Point>
         <X>188.75</X>
-        <Y>17.15729</Y>
+        <Y>18.49206</Y>
       </Point>
       <Point>
         <X>158.4834</X>
-        <Y>17.15729</Y>
+        <Y>17.54686</Y>
       </Point>
       <Start>
         <X>188.75</X>
-        <Y>17.15729</Y>
+        <Y>18.49206</Y>
       </Start>
       <End>
         <X>158.4834</X>
-        <Y>17.15729</Y>
+        <Y>17.54686</Y>
       </End>
     </Points>
   </NodeInfo>
@@ -653,7 +653,7 @@
       <Y>52.34999</Y>
     </Location>
     <Size>
-      <Width>17.79874</Width>
+      <Width>17.79881</Width>
       <Height>23.69425</Height>
     </Size>
     <Shape>Polyline</Shape>
@@ -703,7 +703,7 @@
       <Y>52.34999</Y>
     </Location>
     <Size>
-      <Width>27.96803</Width>
+      <Width>27.968</Width>
       <Height>23.69425</Height>
     </Size>
     <Shape>Polyline</Shape>
@@ -1053,7 +1053,7 @@
       <Y>23.33958</Y>
     </Location>
     <Size>
-      <Width>30.00871</Width>
+      <Width>30.0087</Width>
       <Height>16.64583</Height>
     </Size>
     <Shape>Polyline</Shape>

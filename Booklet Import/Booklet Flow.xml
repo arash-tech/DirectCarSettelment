@@ -1,0 +1,37 @@
+<Flow name="Booklet Flow">
+  <Declaration>
+    <Define name="Input" direction="In" />
+    <Define name="Counterparty Object" type="Object Input Data" assembly="Glossaries\InputData.xml" direction="Local" />
+    <Define name="Car Accident" type="Car Accident" assembly="Glossaries\InputData.xml" direction="Local" />
+    <Define name="Insured Customer Accident Circumstances Input Data" type="Circumstances List" assembly="Glossaries\InputData.xml" direction="Local" />
+    <Define name="Counterparty Accident Circumstances Input Data" type="Circumstances List" assembly="Glossaries\InputData.xml" direction="Local" />
+    <Define name="RDR Car Accident Position" type="RDR Car Accident Positions" assembly="Glossaries\InputData.xml" direction="Out" />
+  </Declaration>
+  <Nodes>
+    <Start name="Start88">
+      <Transition name="Transition45" to="Activity41" />
+    </Start>
+    <Activity name="Activity41">
+      <MultiExpression>
+        <Var value="Counterparty Object.Vehicle Type=Input.Vehicle Type" />
+        <Var value="Counterparty Object.Vehicle Insurance Obligation = Input.Vehicle Insurance Obligation" />
+        <Var value="Counterparty Object.Vehicle Country of Registration = Input.Vehicle Country of Registration" />
+        <Var value="Counterparty Object.Vehicle Insurance Company= Input.Vehicle Insurance Company" />
+        <Var value="Counterparty Object.Vehicle Insurance Status = Input.Vehicle Insurance Status" />
+        <Var value="Car Accident.Accident Statement Mutual Agreement = Input.Accident Statement Mutual Agreement" />
+        <Var value="Car Accident.Accident Country = Input.Accident Country" />
+        <Var value="Car Accident.Claim Type = Input.Claim Type" />
+        <Var value="Insured Customer Accident Circumstances Input Data.Circumstances = Input.Insured Customer Circumstances" />
+        <Var value="Counterparty Accident Circumstances Input Data.Circumstances = Input.Counterparty Circumstances" />
+      </MultiExpression>
+      <Transition name="Transition46" to="Activity42" />
+    </Activity>
+    <Activity name="Activity42">
+      <CallDrd contextMode="Shared">
+        <DrdSource uri="RDR Car Accident Position.xml" />
+      </CallDrd>
+      <Transition name="Transition127" to="End44" />
+    </Activity>
+    <End name="End44" />
+  </Nodes>
+</Flow>

@@ -365,16 +365,16 @@
       <Width>0.3</Width>
     </Border>
     <Location>
-      <X>25.80833</X>
-      <Y>19.04583</Y>
+      <X>688.3249</X>
+      <Y>175.15</Y>
     </Location>
     <Size>
-      <Width>65.35208</Width>
+      <Width>65.35205</Width>
       <Height>36.24791</Height>
     </Size>
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition121" type="Transition">
+  <NodeInfo name="Transition281" type="Transition">
     <Label>
       <Text>Gravity</Text>
       <Font>
@@ -426,7 +426,7 @@
     <Fact reference="Circumstance and Gravity.Gravity" to="Circumstance Gravities" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition122" type="Transition">
+  <NodeInfo name="Transition282" type="Transition">
     <Label>
       <Text>Circumstance and Gravity</Text>
       <Font>
@@ -478,7 +478,7 @@
     <Fact reference="Circumstances and Gravities List.Circumstance and Gravity" to="Circumstance and Gravity" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition123" type="Transition">
+  <NodeInfo name="Transition283" type="Transition">
     <Label>
       <Text>Vehicle Type</Text>
       <Font>
@@ -538,7 +538,7 @@
     <Fact reference="Object Input Data.Vehicle Type" to="Vehicle Type" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition124" type="Transition">
+  <NodeInfo name="Transition284" type="Transition">
     <Label>
       <Text>Vehicle Country of Registration</Text>
       <Font>
@@ -598,7 +598,7 @@
     <Fact reference="Object Input Data.Vehicle Country of Registration" to="Countries" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition125" type="Transition">
+  <NodeInfo name="Transition285" type="Transition">
     <Label>
       <Text>Vehicle Insurance Status</Text>
       <Font>
@@ -658,7 +658,7 @@
     <Fact reference="Object Input Data.Vehicle Insurance Status" to="Insurance Status" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition126" type="Transition">
+  <NodeInfo name="Transition286" type="Transition">
     <Label>
       <Text>Claim Type</Text>
       <Font>
@@ -710,7 +710,7 @@
     <Fact reference="Car Accident.Claim Type" to="Claim Type" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition127" type="Transition">
+  <NodeInfo name="Transition287" type="Transition">
     <Label>
       <Text>Circumstance</Text>
       <Font>
@@ -762,7 +762,7 @@
     <Fact reference="Circumstance and Gravity.Circumstance" to="Circumstances" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition128" type="Transition">
+  <NodeInfo name="Transition288" type="Transition">
     <Label>
       <Text>Circumstances</Text>
       <Font>
@@ -814,7 +814,7 @@
     <Fact reference="Circumstances List.Circumstances" to="Circumstances" />
     <Description></Description>
   </NodeInfo>
-  <NodeInfo name="Transition129" type="Transition">
+  <NodeInfo name="Transition289" type="Transition">
     <Label>
       <Text>Accident Country</Text>
       <Font>

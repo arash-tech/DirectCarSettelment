@@ -4,7 +4,7 @@
     <Define name="Counterparty Accident Circumstances" type="Circumstances and Gravities List" assembly="Glossaries\InputData.xml" direction="In" />
   </Declaration>
   <Columns>
-    <Condition name="Counterparty Accident Circumstances.Gravity is &quot;Extremely Inculpatory&quot;" expression="Counterparty Accident Circumstances.Gravity|contains(&quot;Extremely Inculpatory&quot;)&amp;#13;&amp;#10;/* list contains(Counterparty Accident Circumstances.Gravity,&quot;Extremely Inculpatory&quot;)*/" />
+    <Condition name="Counterparty Accident Circumstances.Gravity is &quot;Extremely Inculpatory&quot;" expression="Counterparty Accident Circumstances.Gravity|contains(&quot;Extremely Inculpatory&quot;)" />
     <Condition name="Counterparty Accident Circumstances.Gravity contains &quot;Inculpatory&quot;" expression="Counterparty Accident Circumstances.Gravity|contains(&quot;Inculpatory&quot;)&amp;#13;&amp;#10;/* list contains(Counterparty Accident Circumstances.Gravity,&quot;Inculpatory&quot;)*/" />
     <Condition name="Counterparty Accident Circumstances.Gravity contains &quot;Protecting&quot;" expression="Counterparty Accident Circumstances.Gravity|contains(&quot;Protecting&quot;)&amp;#13;&amp;#10;/* list contains(Counterparty Accident Circumstances.Gravity,&quot;Protecting&quot;) */" />
     <Action name="Counterparty Highest Circumstance Gravity" expression="Counterparty Highest Circumstance Gravity" />

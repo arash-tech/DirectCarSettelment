@@ -1,0 +1,15 @@
+{
+    "Input":  {
+        "Counterparty Circumstances" : "10 - changing lanes",
+        "Insured Customer Circumstances" : "16 - coming from the right at road junctions",
+        "Accident Statement Mutual Agreement" : true,
+        "Accident Country" : "Belgium",
+        "Claim Type" : "Collision",
+        "Vehicle Type" : "Truck",
+        "Vehicle Insurance Obligation" : false,
+        "Vehicle Country of Registration" : "Belgium",
+        "Vehicle Insurance Company" : "ABN Amro Life SA",
+        "Vehicle Insurance Status" : "Insured",
+        "ObjectIndex" : 0
+    }
+}

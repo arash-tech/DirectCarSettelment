@@ -1,7 +1,7 @@
 <Designer>
   <Project>
-    <Name>DirectCarClaimSettling</Name>
-    <Path>C:\Users\RajithaAbeygunawardh\Documents\FlexRule\Projects\CarSettlementInsuranceRDR</Path>
+    <Name>Rapid Dispute Recovery</Name>
+    <Path>C:\Users\RajithaAbeygunawardh\Documents\Webinar Project\Final-RDR</Path>
     <Description></Description>
   </Project>
   <References />
@@ -125,4 +125,7 @@
       </Group>
     </Template>
   </Metadata>
+  <Exclusions>
+    <File value="Logic Documents\Circumstances Enrichment.xml" />
+  </Exclusions>
 </Designer>

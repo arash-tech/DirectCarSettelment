@@ -29,7 +29,7 @@
           </lines>
           <bounds x="1" y="0" width="1" height="1" />
           <style t="1">
-            <width>105.75pt</width>
+            <width>81pt</width>
             <hidden>0</hidden>
             <conditionalFormats />
           </style>
@@ -61,7 +61,7 @@
           </lines>
           <bounds x="3" y="0" width="1" height="1" />
           <style t="1">
-            <width>162.75pt</width>
+            <width>117pt</width>
             <hidden>0</hidden>
             <conditionalFormats />
           </style>
@@ -126,7 +126,8 @@
           </lines>
           <bounds x="1" y="0" width="1" height="1" />
           <style t="2">
-            <hidden>0</hidden>
+            <height>14.25pt</height>
+            <hidden>1</hidden>
             <outlineLevel>1</outlineLevel>
             <conditionalFormats />
             <fontSize>8</fontSize>
@@ -202,7 +203,8 @@
           </lines>
           <bounds x="2" y="0" width="1" height="1" />
           <style t="2">
-            <hidden>0</hidden>
+            <height>14.25pt</height>
+            <hidden>1</hidden>
             <outlineLevel>1</outlineLevel>
             <conditionalFormats />
             <fontSize>8</fontSize>
@@ -251,15 +253,15 @@
         </region>
         <region>
           <lines>
-            <l ymin="0" ymax="3">
+            <l ymin="0" ymax="2">
               <segments>
                 <s p="0" s="1" />
-                <s p="1" s="0" />
-                <s p="1" s="1" />
-                <s p="2" s="0" />
-                <s p="2" s="1" />
-                <s p="3" s="0" />
-                <s p="3" s="1" />
+                <s p="5" s="0" />
+              </segments>
+            </l>
+            <l ymin="2" ymax="3">
+              <segments>
+                <s p="0" s="1" />
                 <s p="4" s="0" />
                 <s p="4" s="1" />
                 <s p="5" s="0" />
@@ -350,7 +352,7 @@
             <v t="23">8</v>
           </c>
         </row>
-        <row r="2" title="" pageBreak="0" collapsed="0">
+        <row r="2" title="" pageBreak="0" collapsed="1">
           <c c="0">
             <v t="23">1</v>
           </c>
@@ -370,7 +372,7 @@
             <v t="23">6</v>
           </c>
         </row>
-        <row r="3" title="1" pageBreak="0" collapsed="0">
+        <row r="3" title="1" pageBreak="0" collapsed="1">
           <c c="0">
             <v t="23">13</v>
           </c>
@@ -1591,9 +1593,9 @@
   <FlexRule>
     <Columns>
       <Add name="Circumstance Gravity Liability" description="" />
-      <Add name="Insured Customer Number Of Circumstances" description="" />
-      <Add name="Counterparty Number Of Circumstances" description="" />
-      <Add name="Insured Customer Accident Circumstance" description="" />
+      <Add name="Customer Circumstances Count" description="" />
+      <Add name="Counterparty Circumstances Count" description="" />
+      <Add name="Customer Accident Circumstance" description="" />
       <Add name="Counterparty Accident Circumstance" description="" />
       <Add name="Car Accident Liability" description="" />
     </Columns>

@@ -3,86 +3,32 @@
     <Start name="Start171">
       <Transition name="Transition121" to="Gateway120" />
     </Start>
-    <Activity name="Activity190">
-      <CallDecisionTable contextMode="Shared">
-        <DecisionTableSource uri="Logic Documents\Counterparty Insurance RDR Affiliated.xml" />
-      </CallDecisionTable>
-      <Transition name="Transition57" to="Activity56" />
-    </Activity>
-    <Activity name="Activity47">
-      <CallDecisionTable contextMode="Shared">
-        <DecisionTableSource uri="Logic Documents\Motor Vehicle.xml" />
-      </CallDecisionTable>
-      <Transition name="Transition58" to="Activity56" />
-    </Activity>
-    <Activity name="Activity56">
-      <CallDecisionTable contextMode="Shared">
-        <DecisionTableSource uri="Logic Documents\CounterpartyObjectRDREligibility.xml" />
-      </CallDecisionTable>
-      <Transition name="Transition72" to="Activity71" />
-    </Activity>
     <Activity name="Activity60" expression="RDR Affiliated Companies= Company List">
-      <Transition name="Transition61" to="Activity190" />
-      <Transition name="Transition62" to="Activity47" />
-    </Activity>
-    <Activity name="Activity70">
-      <CallDecisionTable contextMode="Shared">
-        <DecisionTableSource uri="Logic Documents\Car Accident RDR Eligibility.xml" />
-      </CallDecisionTable>
-      <Transition name="Transition73" to="Activity71" />
-    </Activity>
-    <Activity name="Activity71">
-      <CallDecisionTable contextMode="Shared">
-        <DecisionTableSource uri="Logic Documents\RDR Clearing Eligibility.xml" />
-      </CallDecisionTable>
-      <Transition name="Transition80" to="Activity74" />
-    </Activity>
-    <Activity name="Activity74">
-      <CallDecisionTable contextMode="Shared">
-        <DecisionTableSource uri="Logic Documents\DT RDR Car Accident Position.xml" />
-      </CallDecisionTable>
-      <Transition name="Transition183" to="Decision182" />
+      <Transition name="Transition164" to="Decision163" />
+      <Transition name="Transition172" to="Decision171" />
     </Activity>
     <Activity name="Activity82">
       <Transition name="Transition105" to="Activity104" />
-      <Transition name="Transition274" to="Activity260" />
+      <Transition name="Transition274" to="Decision185" />
     </Activity>
     <Activity name="Activity83">
       <Transition name="Transition113" to="Activity112" />
-      <Transition name="Transition275" to="Activity267" />
+      <Transition name="Transition275" to="Decision208" />
     </Activity>
     <Activity name="Activity104">
-      <Transition name="Transition111" to="Activity110" />
-    </Activity>
-    <Activity name="Activity110">
-      <CallDecisionTable contextMode="Shared">
-        <DecisionTableSource uri="Logic Documents\Insured Customer Accident Circumstance.xml" />
-      </CallDecisionTable>
-      <Transition name="Transition118" to="Activity116" />
+      <Transition name="Transition353" to="Decision352" />
     </Activity>
     <Activity name="Activity112">
-      <Transition name="Transition115" to="Activity114" />
+      <Transition name="Transition115" to="Decision364" />
     </Activity>
-    <Activity name="Activity114">
-      <CallDecisionTable contextMode="Shared">
-        <DecisionTableSource uri="Logic Documents\Counterparty Accident Circumstance.xml" />
-      </CallDecisionTable>
-      <Transition name="Transition119" to="Activity116" />
-    </Activity>
-    <Activity name="Activity116">
-      <CallDecisionTable contextMode="Shared">
-        <DecisionTableSource uri="Logic Documents\Car Accident Liability.xml" />
-      </CallDecisionTable>
-      <Transition name="Transition117" to="Activity74" />
-    </Activity>
-    <Gateway name="Gateway120" type="Parallel">
+    <Gateway name="Gateway120" type="Exclusive">
       <Transition name="Transition122" to="Activity60" />
-      <Transition name="Transition123" to="Activity70" />
       <Transition name="Transition124" to="Activity82" />
       <Transition name="Transition125" to="Activity83" />
+      <Transition name="Transition123" to="Decision332" />
     </Gateway>
     <Decision name="Decision182">
-      <Transition name="Transition185" to="Activity184" />
+      <Transition name="Transition185" to="Activity184" condition="t" />
       <Transition name="Transition189" to="HumanTask188" />
     </Decision>
     <Activity name="Activity184">
@@ -104,23 +50,195 @@
     </Activity>
     <Terminate name="Terminate195" />
     <Terminate name="Terminate197" />
-    <Activity name="Activity258">
-      <CallDecisionTable contextMode="Shared">
-        <DecisionTableSource uri="Logic Documents\Circumstance Gravity Liability.xml" />
-      </CallDecisionTable>
-      <Transition name="Transition259" to="Activity116" />
+    <Decision name="Decision163">
+      <Transition name="Transition166" to="Activity165" condition="t" />
+      <Transition name="Transition168" to="Activity167" />
+    </Decision>
+    <Activity name="Activity165">
+      <Transition name="Transition304" to="Decision303" />
     </Activity>
-    <Activity name="Activity260">
-      <CallDecisionTable contextMode="Shared">
-        <DecisionTableSource uri="Logic Documents\Insured Customer Highest Circumstance Gravity.xml" />
-      </CallDecisionTable>
-      <Transition name="Transition276" to="Activity258" />
+    <Activity name="Activity167">
+      <Transition name="Transition305" to="Decision303" />
     </Activity>
-    <Activity name="Activity267">
-      <CallDecisionTable contextMode="Shared">
-        <DecisionTableSource uri="Logic Documents\Counterparty Highest Circumstance Gravity.xml" />
-      </CallDecisionTable>
-      <Transition name="Transition277" to="Activity258" />
+    <Decision name="Decision171">
+      <Transition name="Transition175" to="Activity173" condition="t" />
+      <Transition name="Transition176" to="Activity174" />
+    </Decision>
+    <Activity name="Activity173">
+      <Transition name="Transition306" to="Decision303" />
+    </Activity>
+    <Activity name="Activity174">
+      <Transition name="Transition307" to="Decision303" />
+    </Activity>
+    <Decision name="Decision185">
+      <Transition name="Transition195" to="Activity189" condition="t" />
+      <Transition name="Transition197" to="Activity190" condition="t" />
+      <Transition name="Transition199" to="Activity193" condition="t" />
+      <Transition name="Transition201" to="Activity200" />
+    </Decision>
+    <Activity name="Activity189">
+      <Transition name="Transition266" to="Decision265" />
+    </Activity>
+    <Activity name="Activity190">
+      <Transition name="Transition267" to="Decision265" />
+    </Activity>
+    <Activity name="Activity193">
+      <Transition name="Transition268" to="Decision265" />
+    </Activity>
+    <Activity name="Activity200">
+      <Transition name="Transition269" to="Decision265" />
+    </Activity>
+    <Decision name="Decision208">
+      <Transition name="Transition216" to="Activity215" />
+      <Transition name="Transition218" to="Activity217" />
+      <Transition name="Transition221" to="Activity219" />
+      <Transition name="Transition222" to="Activity220" />
+    </Decision>
+    <Activity name="Activity215">
+      <Transition name="Transition270" to="Decision265" />
+    </Activity>
+    <Activity name="Activity217">
+      <Transition name="Transition271" to="Decision265" />
+    </Activity>
+    <Activity name="Activity219">
+      <Transition name="Transition272" to="Decision265" />
+    </Activity>
+    <Activity name="Activity220">
+      <Transition name="Transition273" to="Decision265" />
+    </Activity>
+    <Decision name="Decision265">
+      <Transition name="Transition284" to="Activity274" condition="t" />
+      <Transition name="Transition285" to="Activity275" condition="t" />
+      <Transition name="Transition286" to="Activity283" condition="t" />
+      <Transition name="Transition287" to="Activity276" condition="t" />
+      <Transition name="Transition288" to="Activity277" />
+      <Transition name="Transition289" to="Activity278" />
+      <Transition name="Transition290" to="Activity279" />
+      <Transition name="Transition291" to="Activity280" />
+      <Transition name="Transition292" to="Activity281" />
+      <Transition name="Transition293" to="Activity282" />
+    </Decision>
+    <Activity name="Activity274">
+      <Transition name="Transition475" to="Decision406" />
+    </Activity>
+    <Activity name="Activity275">
+      <Transition name="Transition476" to="Decision406" />
+    </Activity>
+    <Activity name="Activity276">
+      <Transition name="Transition478" to="Decision406" />
+    </Activity>
+    <Activity name="Activity277">
+      <Transition name="Transition479" to="Decision406" />
+    </Activity>
+    <Activity name="Activity278">
+      <Transition name="Transition480" to="Decision406" />
+    </Activity>
+    <Activity name="Activity279">
+      <Transition name="Transition481" to="Decision406" />
+    </Activity>
+    <Activity name="Activity280">
+      <Transition name="Transition482" to="Decision406" />
+    </Activity>
+    <Activity name="Activity281">
+      <Transition name="Transition483" to="Decision406" />
+    </Activity>
+    <Activity name="Activity282" />
+    <Activity name="Activity283">
+      <Transition name="Transition477" to="Decision406" />
+    </Activity>
+    <Decision name="Decision303">
+      <Transition name="Transition314" to="Activity313" condition="t" />
+      <Transition name="Transition315" to="Activity308" condition="t" />
+      <Transition name="Transition316" to="Activity309" condition="t" />
+    </Decision>
+    <Activity name="Activity308">
+      <Transition name="Transition388" to="Decision386" />
+    </Activity>
+    <Activity name="Activity309">
+      <Transition name="Transition389" to="Decision386" />
+    </Activity>
+    <Activity name="Activity313">
+      <Transition name="Transition387" to="Decision386" />
+    </Activity>
+    <Decision name="Decision332">
+      <Transition name="Transition340" to="Activity335" condition="t" />
+      <Transition name="Transition341" to="Activity336" condition="t" />
+    </Decision>
+    <Activity name="Activity335">
+      <Transition name="Transition390" to="Decision386" />
+    </Activity>
+    <Activity name="Activity336">
+      <Transition name="Transition391" to="Decision386" />
+    </Activity>
+    <Decision name="Decision352">
+      <Transition name="Transition356" to="Activity354" condition="t" />
+      <Transition name="Transition357" to="Activity355" />
+    </Decision>
+    <Activity name="Activity354">
+      <Transition name="Transition407" to="Decision406" />
+    </Activity>
+    <Activity name="Activity355">
+      <Transition name="Transition409" to="Decision406" />
+    </Activity>
+    <Decision name="Decision364">
+      <Transition name="Transition369" to="Activity367" condition="tyy" />
+      <Transition name="Transition370" to="Activity368" />
+    </Decision>
+    <Activity name="Activity367">
+      <Transition name="Transition408" to="Decision406" />
+    </Activity>
+    <Activity name="Activity368">
+      <Transition name="Transition410" to="Decision406" />
+    </Activity>
+    <Decision name="Decision386">
+      <Transition name="Transition393" to="Activity392" condition="t" />
+      <Transition name="Transition395" to="Activity394" />
+    </Decision>
+    <Activity name="Activity392">
+      <Transition name="Transition498" to="Decision489" />
+    </Activity>
+    <Activity name="Activity394">
+      <Transition name="Transition492" to="Decision489" />
+    </Activity>
+    <Decision name="Decision406">
+      <Transition name="Transition412" to="Activity411" condition="t" />
+      <Transition name="Transition465" to="Activity413" condition="t" />
+      <Transition name="Transition466" to="Activity416" condition="t" />
+      <Transition name="Transition467" to="Activity414" condition="t" />
+      <Transition name="Transition468" to="Activity415" />
+    </Decision>
+    <Activity name="Activity411">
+      <Transition name="Transition493" to="Decision489" />
+    </Activity>
+    <Activity name="Activity413">
+      <Transition name="Transition494" to="Decision489" />
+    </Activity>
+    <Activity name="Activity414">
+      <Transition name="Transition495" to="Decision489" />
+    </Activity>
+    <Activity name="Activity415">
+      <Transition name="Transition497" to="Decision489" />
+    </Activity>
+    <Activity name="Activity416">
+      <Transition name="Transition496" to="Decision489" />
+    </Activity>
+    <Decision name="Decision489">
+      <Transition name="Transition491" to="Activity499" condition="t" />
+      <Transition name="Transition503" to="Activity502" condition="t" />
+      <Transition name="Transition505" to="Activity504" condition="t" />
+      <Transition name="Transition507" to="Activity506" />
+    </Decision>
+    <Activity name="Activity499">
+      <Transition name="Transition501" to="Decision182" />
+    </Activity>
+    <Activity name="Activity502">
+      <Transition name="Transition508" to="Decision182" />
+    </Activity>
+    <Activity name="Activity504">
+      <Transition name="Transition509" to="Decision182" />
+    </Activity>
+    <Activity name="Activity506">
+      <Transition name="Transition510" to="Decision182" />
     </Activity>
   </Nodes>
 </Workflow>

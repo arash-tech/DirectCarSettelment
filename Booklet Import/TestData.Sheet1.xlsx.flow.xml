@@ -1,0 +1,29 @@
+<Flow name="BookletFlowxlsx TestData.xlsx">
+  <Declaration>
+    <Define name="Results" direction="Out" />
+  </Declaration>
+  <Nodes>
+    <Start name="StartActivity">
+      <Transition name="Transition14" to="LoadxlsxActivity" />
+    </Start>
+    <End name="EndActivity" />
+    <Activity name="LoadxlsxActivity">
+      <Spreadsheet return="Results" type="xlsx">
+        <DataSource uri="Booklet DataSource\TestData.xlsx" rows="1-9" />
+        <Map>
+  <Add property="Counterparty Circumstances" column="A" type="string" />
+  <Add property="Insured Customer Circumstances" column="B" type="string" />
+  <Add property="Accident Statement Mutual Agreement" column="C" type="bool" />
+  <Add property="Accident Country" column="D" type="string" />
+  <Add property="Claim Type" column="E" type="string" />
+  <Add property="Vehicle Type" column="F" type="string" />
+  <Add property="Vehicle Insurance Obligation" column="G" type="bool" />
+  <Add property="Vehicle Country of Registration" column="H" type="string" />
+  <Add property="Vehicle Insurance Company" column="I" type="string" />
+  <Add property="Vehicle Insurance Status" column="J" type="string" />
+</Map>
+      </Spreadsheet>
+      <Transition name="Transition15" to="EndActivity" />
+    </Activity>
+  </Nodes>
+</Flow>

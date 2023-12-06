@@ -205,22 +205,14 @@
         </region>
         <region>
           <lines>
-            <l ymin="0" ymax="2">
+            <l ymin="0" ymax="3">
               <segments>
-                <s p="0" s="1" />
-                <s p="2" s="0" />
-              </segments>
-            </l>
-            <l ymin="2" ymax="3">
-              <segments>
-                <s p="0" s="1" />
-                <s p="1" s="0" />
-                <s p="1" s="1" />
-                <s p="2" s="0" />
+                <s p="2" s="1" />
+                <s p="3" s="0" />
               </segments>
             </l>
           </lines>
-          <bounds x="0" y="0" width="2" height="3" />
+          <bounds x="2" y="0" width="1" height="3" />
           <style t="0">
             <conditionalFormats />
             <background id="0" />
@@ -230,12 +222,14 @@
           <lines>
             <l ymin="0" ymax="3">
               <segments>
-                <s p="2" s="1" />
-                <s p="3" s="0" />
+                <s p="0" s="1" />
+                <s p="1" s="0" />
+                <s p="1" s="1" />
+                <s p="2" s="0" />
               </segments>
             </l>
           </lines>
-          <bounds x="2" y="0" width="1" height="3" />
+          <bounds x="0" y="0" width="2" height="3" />
           <style t="0">
             <conditionalFormats />
             <background id="1" />
@@ -352,10 +346,10 @@
     <sharedStrings />
     <brushes>
       <brush n="0" t="solid">
-        <color>#FFC0FFC0</color>
+        <color>#FFFFE0C0</color>
       </brush>
       <brush n="1" t="solid">
-        <color>#FFFFE0C0</color>
+        <color>#FFC0FFC0</color>
       </brush>
     </brushes>
     <images />

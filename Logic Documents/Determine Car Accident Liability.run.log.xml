@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ExecTemplate>
   <Record date="2023-11-15T00:55:52.165474Z" file="Logic Documents\Determine Car Accident Liability.xml" title="Test Run 1 - 1 Circumstance" description="Car Accident Liability = Liability Cannot be determined">
     <Run providerType="JSONComposer" file=".RunTemplate\dc5fd0c8-9653-471f-b842-a0160a7617b5.js.json" />

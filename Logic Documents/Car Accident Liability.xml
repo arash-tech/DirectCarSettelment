@@ -9,9 +9,9 @@
   </Declaration>
   <Columns>
     <Condition name="Circumstance Gravity Liability" expression="Circumstance Gravity Liability" />
-    <Condition name="Insured Customer Number Of Circumstances" expression="Insured Customer Number of Circumstances" />
-    <Condition name="Counterparty Number Of Circumstances" expression="Counterparty Number of Circumstances" />
-    <Condition name="Insured Customer Accident Circumstance" expression="Insured Customer Accident Circumstance|in($value)" />
+    <Condition name="Customer Circumstances Count" expression="Insured Customer Number of Circumstances" />
+    <Condition name="Counterparty Circumstances Count" expression="Counterparty Number of Circumstances" />
+    <Condition name="Customer Accident Circumstance" expression="Insured Customer Accident Circumstance|in($value)" />
     <Condition name="Counterparty Accident Circumstance" expression="Counterparty Accident Circumstance|in($value)" />
     <Action name="Car Accident Liability" expression="Car Accident Liability" />
   </Columns>

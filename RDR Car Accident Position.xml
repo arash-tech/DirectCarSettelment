@@ -1,7 +1,7 @@
 <DRD name="RDR Car Accident Position">
   <Declaration>
     <Define name="Insured Customer Accident Circumstances" type="Circumstances and Gravities List" assembly="Glossaries\InputData.xml" direction="Local" value="[]" />
-    <Define name="RDR Affiliated Companies" type="Company List" assembly="Glossaries\InputData.xml" direction="Out" />
+    <Define name="RDR Affiliated Companies" type="Company List" assembly="Glossaries\InputData.xml" direction="Local" />
     <Define name="Counterparty Accident Circumstances" type="Circumstances and Gravities List" assembly="Glossaries\InputData.xml" direction="Local" value="[]" />
     <Define name="RDR Car Accident Position" type="RDR Car Accident Positions" assembly="Glossaries\InputData.xml" direction="Out" />
   </Declaration>

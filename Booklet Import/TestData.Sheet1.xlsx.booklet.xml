@@ -1,0 +1,12 @@
+<Booklet name="DataTablexlsx TestData.xlsx">
+  <DataSources>
+    <CallFlow contextMode="Shared">
+      <FlowSource uri="Booklet Import\TestData.Sheet1.xlsx.flow.xml" />
+    </CallFlow>
+  </DataSources>
+  <Scenarios>
+    <Run name="Scenario" dataRowName="Row" uri="Booklet Flow.xml">
+      <Param name="Input" value="Row" />
+    </Run>
+  </Scenarios>
+</Booklet>
